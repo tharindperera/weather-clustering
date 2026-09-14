@@ -11,10 +11,9 @@ __pycache__/
 # Environment/secrets
 .env
 
-# Large/local data
-data/raw/
-data/processed/
-data/features/
+# Large/local data (excluding repository .gitkeep)
+data/*
+!data/.gitkeep
 
 # Logs
 *.log
