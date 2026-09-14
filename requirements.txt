@@ -1,4 +1,6 @@
 requests
-pandas
+pandas<3
 pyarrow
 duckdb
+pyspark==4.2.0
+huggingface_hub
