@@ -9,6 +9,7 @@ from config import (
     BATCH_SIZE,
     DAILY_VARIABLES,
     HISTORICAL_API_URL,
+    MAX_RETRIES,
     REQUEST_DELAY_SECONDS,
     REQUEST_TIMEOUT_SECONDS,
     HISTORICAL_START_DATE,
@@ -17,13 +18,13 @@ from config import (
 
 
 def load_test_locations() -> pd.DataFrame:
-    """Load only the first five locations for testing."""
+    """Load 20 locations for the batch-size test."""
 
     from config import LOCATIONS_FILE
 
     df = pd.read_csv(LOCATIONS_FILE)
 
-    return df.head(5).copy()
+    return df.head(20).copy()
 
 
 def build_request_params(batch: pd.DataFrame) -> dict:
@@ -52,7 +53,7 @@ def fetch_with_retry(
     params: dict,
 ) -> dict:
 
-    for attempt in range(1, 6):
+    for attempt in range(1, MAX_RETRIES + 1):
 
         try:
 
@@ -87,7 +88,7 @@ def fetch_with_retry(
 
         except requests.RequestException as exc:
 
-            if attempt == 5:
+            if attempt == MAX_RETRIES:
                 raise
 
             wait = 2 ** attempt
@@ -115,9 +116,9 @@ def main() -> None:
 
     locations = load_test_locations()
     print(
-    f"Historical period: "
-    f"{HISTORICAL_START_DATE} → {HISTORICAL_END_DATE}"
-)
+        f"Historical period: "
+        f"{HISTORICAL_START_DATE} → {HISTORICAL_END_DATE}"
+    )
 
     print(
         f"Testing with {len(locations)} locations."

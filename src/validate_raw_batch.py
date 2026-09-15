@@ -35,7 +35,7 @@ def main() -> None:
 
     print(f"\nLocations in response: {len(results)}")
 
-    expected_daily_days = 366
+    expected_daily_days = 14
 
     required_variables = [
         "time",

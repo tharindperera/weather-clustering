@@ -40,8 +40,8 @@ HISTORICAL_API_URL = (
 # Historical period
 # ---------------------------------------------------------
 
-HISTORICAL_START_DATE = "2024-01-01"
-HISTORICAL_END_DATE = "2024-12-31"
+HISTORICAL_START_DATE = "2016-01-01"
+HISTORICAL_END_DATE = "2025-12-31"
 
 
 # ---------------------------------------------------------
@@ -58,16 +58,19 @@ DAILY_VARIABLES = [
     "surface_pressure_mean",
 ]
 
+# ---------------------------------------------------------
+# Ingestion configuration
+# ---------------------------------------------------------
+
+BATCH_SIZE = 20
+WINDOW_DAYS = 14
 
 # ---------------------------------------------------------
 # API safety configuration
 # ---------------------------------------------------------
 
-# Start conservatively.
-BATCH_SIZE = 5
-
 # Minimum delay between successful requests.
-REQUEST_DELAY_SECONDS = 2.0
+REQUEST_DELAY_SECONDS = 5.0
 
 # Maximum number of retries after temporary failures.
 MAX_RETRIES = 5
@@ -77,3 +80,11 @@ BACKOFF_BASE_SECONDS = 2.0
 
 # HTTP timeout.
 REQUEST_TIMEOUT_SECONDS = 120
+
+# ---------------------------------------------------------
+# API usage safety budget
+# ---------------------------------------------------------
+
+# Open-Meteo currently documents a higher free daily limit.
+# We intentionally operate below it for safety.
+DAILY_API_SAFETY_LIMIT = 7000
