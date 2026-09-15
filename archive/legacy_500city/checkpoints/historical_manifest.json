@@ -1,0 +1,2566 @@
+{
+  "version": 1,
+  "created_at": "2026-09-15T10:00:30.254549+00:00",
+  "updated_at": "2026-09-15T10:39:00.811226+00:00",
+  "items": {
+    "batch_0001__2024-01-01__2024-01-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:00:31.007746+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2024-01-01_2024-01-14\\batch_0001__2024-01-01__2024-01-14.json"
+      }
+    },
+    "batch_0002__2024-01-01__2024-01-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:03:17.103484+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2024-01-01_2024-01-14\\batch_0002__2024-01-01__2024-01-14.json"
+      }
+    },
+    "batch_0003__2024-01-01__2024-01-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:05:43.630398+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2024-01-01_2024-01-14\\batch_0003__2024-01-01__2024-01-14.json"
+      }
+    },
+    "batch_0004__2024-01-01__2024-01-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:10:17.601280+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2024-01-01_2024-01-14\\batch_0004__2024-01-01__2024-01-14.json"
+      }
+    },
+    "batch_0005__2024-01-01__2024-01-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:13:02.946753+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-01-01",
+        "end_date": "2024-01-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2024-01-01_2024-01-14\\batch_0005__2024-01-01__2024-01-14.json"
+      }
+    },
+    "batch_0001__2016-01-01__2016-01-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:27:19.629595+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-01-01",
+        "end_date": "2016-01-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-01-01__2016-01-14.json"
+      }
+    },
+    "batch_0001__2016-01-15__2016-01-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:40.653023+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-01-15",
+        "end_date": "2016-01-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-01-15__2016-01-28.json"
+      }
+    },
+    "batch_0001__2016-01-29__2016-02-11": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:42.058681+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-01-29",
+        "end_date": "2016-02-11",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-01-29__2016-02-11.json"
+      }
+    },
+    "batch_0001__2016-02-12__2016-02-25": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:44.317911+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-02-12",
+        "end_date": "2016-02-25",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-02-12__2016-02-25.json"
+      }
+    },
+    "batch_0001__2016-02-26__2016-03-10": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:46.058331+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-02-26",
+        "end_date": "2016-03-10",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-02-26__2016-03-10.json"
+      }
+    },
+    "batch_0001__2016-03-11__2016-03-24": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:48.054612+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-03-11",
+        "end_date": "2016-03-24",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-03-11__2016-03-24.json"
+      }
+    },
+    "batch_0001__2016-03-25__2016-04-07": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:50.059042+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-03-25",
+        "end_date": "2016-04-07",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-03-25__2016-04-07.json"
+      }
+    },
+    "batch_0001__2016-04-08__2016-04-21": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:52.072020+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-04-08",
+        "end_date": "2016-04-21",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-04-08__2016-04-21.json"
+      }
+    },
+    "batch_0001__2016-04-22__2016-05-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:54.053527+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-04-22",
+        "end_date": "2016-05-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-04-22__2016-05-05.json"
+      }
+    },
+    "batch_0001__2016-05-06__2016-05-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:56.064614+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-05-06",
+        "end_date": "2016-05-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-05-06__2016-05-19.json"
+      }
+    },
+    "batch_0001__2016-05-20__2016-06-02": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:29:58.059838+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-05-20",
+        "end_date": "2016-06-02",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-05-20__2016-06-02.json"
+      }
+    },
+    "batch_0001__2016-06-03__2016-06-16": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:00.062979+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-06-03",
+        "end_date": "2016-06-16",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-06-03__2016-06-16.json"
+      }
+    },
+    "batch_0001__2016-06-17__2016-06-30": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:02.064505+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-06-17",
+        "end_date": "2016-06-30",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-06-17__2016-06-30.json"
+      }
+    },
+    "batch_0001__2016-07-01__2016-07-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:04.087419+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-07-01",
+        "end_date": "2016-07-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-07-01__2016-07-14.json"
+      }
+    },
+    "batch_0001__2016-07-15__2016-07-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:06.085447+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-07-15",
+        "end_date": "2016-07-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-07-15__2016-07-28.json"
+      }
+    },
+    "batch_0001__2016-07-29__2016-08-11": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:08.081943+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-07-29",
+        "end_date": "2016-08-11",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-07-29__2016-08-11.json"
+      }
+    },
+    "batch_0001__2016-08-12__2016-08-25": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:10.155950+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-08-12",
+        "end_date": "2016-08-25",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-08-12__2016-08-25.json"
+      }
+    },
+    "batch_0001__2016-08-26__2016-09-08": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:12.089455+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-08-26",
+        "end_date": "2016-09-08",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-08-26__2016-09-08.json"
+      }
+    },
+    "batch_0001__2016-09-09__2016-09-22": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:14.065602+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-09-09",
+        "end_date": "2016-09-22",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-09-09__2016-09-22.json"
+      }
+    },
+    "batch_0001__2016-09-23__2016-10-06": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:16.156196+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-09-23",
+        "end_date": "2016-10-06",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-09-23__2016-10-06.json"
+      }
+    },
+    "batch_0001__2016-10-07__2016-10-20": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:18.068910+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-10-07",
+        "end_date": "2016-10-20",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-10-07__2016-10-20.json"
+      }
+    },
+    "batch_0001__2016-10-21__2016-11-03": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:20.064728+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-10-21",
+        "end_date": "2016-11-03",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-10-21__2016-11-03.json"
+      }
+    },
+    "batch_0001__2016-11-04__2016-11-17": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:22.102801+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-11-04",
+        "end_date": "2016-11-17",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-11-04__2016-11-17.json"
+      }
+    },
+    "batch_0001__2016-11-18__2016-12-01": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:24.067428+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-11-18",
+        "end_date": "2016-12-01",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-11-18__2016-12-01.json"
+      }
+    },
+    "batch_0001__2016-12-02__2016-12-15": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:26.066013+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-12-02",
+        "end_date": "2016-12-15",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-12-02__2016-12-15.json"
+      }
+    },
+    "batch_0001__2016-12-16__2016-12-29": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:28.077158+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-12-16",
+        "end_date": "2016-12-29",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-12-16__2016-12-29.json"
+      }
+    },
+    "batch_0001__2016-12-30__2017-01-12": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:30.925242+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2016-12-30",
+        "end_date": "2017-01-12",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2016-12-30__2017-01-12.json"
+      }
+    },
+    "batch_0001__2017-01-13__2017-01-26": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:32.070252+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-01-13",
+        "end_date": "2017-01-26",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-01-13__2017-01-26.json"
+      }
+    },
+    "batch_0001__2017-01-27__2017-02-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:34.071576+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-01-27",
+        "end_date": "2017-02-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-01-27__2017-02-09.json"
+      }
+    },
+    "batch_0001__2017-02-10__2017-02-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:36.095825+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-02-10",
+        "end_date": "2017-02-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-02-10__2017-02-23.json"
+      }
+    },
+    "batch_0001__2017-02-24__2017-03-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:38.068886+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-02-24",
+        "end_date": "2017-03-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-02-24__2017-03-09.json"
+      }
+    },
+    "batch_0001__2017-03-10__2017-03-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:40.071712+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-03-10",
+        "end_date": "2017-03-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-03-10__2017-03-23.json"
+      }
+    },
+    "batch_0001__2017-03-24__2017-04-06": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:42.074713+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-03-24",
+        "end_date": "2017-04-06",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-03-24__2017-04-06.json"
+      }
+    },
+    "batch_0001__2017-04-07__2017-04-20": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:44.079163+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-04-07",
+        "end_date": "2017-04-20",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-04-07__2017-04-20.json"
+      }
+    },
+    "batch_0001__2017-04-21__2017-05-04": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:46.091464+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-04-21",
+        "end_date": "2017-05-04",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-04-21__2017-05-04.json"
+      }
+    },
+    "batch_0001__2017-05-05__2017-05-18": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:48.168126+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-05-05",
+        "end_date": "2017-05-18",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-05-05__2017-05-18.json"
+      }
+    },
+    "batch_0001__2017-05-19__2017-06-01": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:50.079849+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-05-19",
+        "end_date": "2017-06-01",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-05-19__2017-06-01.json"
+      }
+    },
+    "batch_0001__2017-06-02__2017-06-15": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:52.082349+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-06-02",
+        "end_date": "2017-06-15",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-06-02__2017-06-15.json"
+      }
+    },
+    "batch_0001__2017-06-16__2017-06-29": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:54.086059+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-06-16",
+        "end_date": "2017-06-29",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-06-16__2017-06-29.json"
+      }
+    },
+    "batch_0001__2017-06-30__2017-07-13": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:56.102306+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-06-30",
+        "end_date": "2017-07-13",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-06-30__2017-07-13.json"
+      }
+    },
+    "batch_0001__2017-07-14__2017-07-27": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:30:58.078422+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-07-14",
+        "end_date": "2017-07-27",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-07-14__2017-07-27.json"
+      }
+    },
+    "batch_0001__2017-07-28__2017-08-10": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:00.082692+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-07-28",
+        "end_date": "2017-08-10",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-07-28__2017-08-10.json"
+      }
+    },
+    "batch_0001__2017-08-11__2017-08-24": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:02.141000+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-08-11",
+        "end_date": "2017-08-24",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-08-11__2017-08-24.json"
+      }
+    },
+    "batch_0001__2017-08-25__2017-09-07": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:04.111335+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-08-25",
+        "end_date": "2017-09-07",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-08-25__2017-09-07.json"
+      }
+    },
+    "batch_0001__2017-09-08__2017-09-21": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:06.082657+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-09-08",
+        "end_date": "2017-09-21",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-09-08__2017-09-21.json"
+      }
+    },
+    "batch_0001__2017-09-22__2017-10-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:08.127623+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-09-22",
+        "end_date": "2017-10-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-09-22__2017-10-05.json"
+      }
+    },
+    "batch_0001__2017-10-06__2017-10-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:10.087360+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-10-06",
+        "end_date": "2017-10-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-10-06__2017-10-19.json"
+      }
+    },
+    "batch_0001__2017-10-20__2017-11-02": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:12.087798+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-10-20",
+        "end_date": "2017-11-02",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-10-20__2017-11-02.json"
+      }
+    },
+    "batch_0001__2017-11-03__2017-11-16": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:14.202966+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-11-03",
+        "end_date": "2017-11-16",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-11-03__2017-11-16.json"
+      }
+    },
+    "batch_0001__2017-11-17__2017-11-30": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:16.085548+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-11-17",
+        "end_date": "2017-11-30",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-11-17__2017-11-30.json"
+      }
+    },
+    "batch_0001__2017-12-01__2017-12-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:18.090740+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-12-01",
+        "end_date": "2017-12-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-12-01__2017-12-14.json"
+      }
+    },
+    "batch_0001__2017-12-15__2017-12-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:20.086883+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-12-15",
+        "end_date": "2017-12-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-12-15__2017-12-28.json"
+      }
+    },
+    "batch_0001__2017-12-29__2018-01-11": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:22.975583+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2017-12-29",
+        "end_date": "2018-01-11",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2017-12-29__2018-01-11.json"
+      }
+    },
+    "batch_0001__2018-01-12__2018-01-25": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:24.087185+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-01-12",
+        "end_date": "2018-01-25",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-01-12__2018-01-25.json"
+      }
+    },
+    "batch_0001__2018-01-26__2018-02-08": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:26.087208+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-01-26",
+        "end_date": "2018-02-08",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-01-26__2018-02-08.json"
+      }
+    },
+    "batch_0001__2018-02-09__2018-02-22": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:28.105912+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-02-09",
+        "end_date": "2018-02-22",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-02-09__2018-02-22.json"
+      }
+    },
+    "batch_0001__2018-02-23__2018-03-08": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:30.091182+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-02-23",
+        "end_date": "2018-03-08",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-02-23__2018-03-08.json"
+      }
+    },
+    "batch_0001__2018-03-09__2018-03-22": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:32.087922+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-03-09",
+        "end_date": "2018-03-22",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-03-09__2018-03-22.json"
+      }
+    },
+    "batch_0001__2018-03-23__2018-04-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:34.089808+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-03-23",
+        "end_date": "2018-04-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-03-23__2018-04-05.json"
+      }
+    },
+    "batch_0001__2018-04-06__2018-04-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:36.090100+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-04-06",
+        "end_date": "2018-04-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-04-06__2018-04-19.json"
+      }
+    },
+    "batch_0001__2018-04-20__2018-05-03": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:38.093697+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-04-20",
+        "end_date": "2018-05-03",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-04-20__2018-05-03.json"
+      }
+    },
+    "batch_0001__2018-05-04__2018-05-17": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:40.129077+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-05-04",
+        "end_date": "2018-05-17",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-05-04__2018-05-17.json"
+      }
+    },
+    "batch_0001__2018-05-18__2018-05-31": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:42.103307+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-05-18",
+        "end_date": "2018-05-31",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-05-18__2018-05-31.json"
+      }
+    },
+    "batch_0001__2018-06-01__2018-06-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:44.100204+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-06-01",
+        "end_date": "2018-06-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-06-01__2018-06-14.json"
+      }
+    },
+    "batch_0001__2018-06-15__2018-06-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:46.105645+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-06-15",
+        "end_date": "2018-06-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-06-15__2018-06-28.json"
+      }
+    },
+    "batch_0001__2018-06-29__2018-07-12": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:48.119764+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-06-29",
+        "end_date": "2018-07-12",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-06-29__2018-07-12.json"
+      }
+    },
+    "batch_0001__2018-07-13__2018-07-26": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:50.107148+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-07-13",
+        "end_date": "2018-07-26",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-07-13__2018-07-26.json"
+      }
+    },
+    "batch_0001__2018-07-27__2018-08-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:52.098007+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-07-27",
+        "end_date": "2018-08-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-07-27__2018-08-09.json"
+      }
+    },
+    "batch_0001__2018-08-10__2018-08-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:54.115340+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-08-10",
+        "end_date": "2018-08-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-08-10__2018-08-23.json"
+      }
+    },
+    "batch_0001__2018-08-24__2018-09-06": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:56.100895+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-08-24",
+        "end_date": "2018-09-06",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-08-24__2018-09-06.json"
+      }
+    },
+    "batch_0001__2018-09-07__2018-09-20": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:31:58.130835+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-09-07",
+        "end_date": "2018-09-20",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-09-07__2018-09-20.json"
+      }
+    },
+    "batch_0001__2018-09-21__2018-10-04": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:00.316183+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-09-21",
+        "end_date": "2018-10-04",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-09-21__2018-10-04.json"
+      }
+    },
+    "batch_0001__2018-10-05__2018-10-18": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:02.102040+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-10-05",
+        "end_date": "2018-10-18",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-10-05__2018-10-18.json"
+      }
+    },
+    "batch_0001__2018-10-19__2018-11-01": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:04.105728+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-10-19",
+        "end_date": "2018-11-01",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-10-19__2018-11-01.json"
+      }
+    },
+    "batch_0001__2018-11-02__2018-11-15": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:06.101760+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-11-02",
+        "end_date": "2018-11-15",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-11-02__2018-11-15.json"
+      }
+    },
+    "batch_0001__2018-11-16__2018-11-29": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:08.133202+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-11-16",
+        "end_date": "2018-11-29",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-11-16__2018-11-29.json"
+      }
+    },
+    "batch_0001__2018-11-30__2018-12-13": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:10.107999+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-11-30",
+        "end_date": "2018-12-13",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-11-30__2018-12-13.json"
+      }
+    },
+    "batch_0001__2018-12-14__2018-12-27": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:12.106356+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-12-14",
+        "end_date": "2018-12-27",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-12-14__2018-12-27.json"
+      }
+    },
+    "batch_0001__2018-12-28__2019-01-10": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:15.185226+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2018-12-28",
+        "end_date": "2019-01-10",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2018-12-28__2019-01-10.json"
+      }
+    },
+    "batch_0001__2019-01-11__2019-01-24": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:16.107737+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-01-11",
+        "end_date": "2019-01-24",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-01-11__2019-01-24.json"
+      }
+    },
+    "batch_0001__2019-01-25__2019-02-07": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:18.107756+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-01-25",
+        "end_date": "2019-02-07",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-01-25__2019-02-07.json"
+      }
+    },
+    "batch_0001__2019-02-08__2019-02-21": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:20.115575+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-02-08",
+        "end_date": "2019-02-21",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-02-08__2019-02-21.json"
+      }
+    },
+    "batch_0001__2019-02-22__2019-03-07": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:22.108955+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-02-22",
+        "end_date": "2019-03-07",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-02-22__2019-03-07.json"
+      }
+    },
+    "batch_0001__2019-03-08__2019-03-21": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:24.109756+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-03-08",
+        "end_date": "2019-03-21",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-03-08__2019-03-21.json"
+      }
+    },
+    "batch_0001__2019-03-22__2019-04-04": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:26.111384+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-03-22",
+        "end_date": "2019-04-04",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-03-22__2019-04-04.json"
+      }
+    },
+    "batch_0001__2019-04-05__2019-04-18": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:28.112898+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-04-05",
+        "end_date": "2019-04-18",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-04-05__2019-04-18.json"
+      }
+    },
+    "batch_0001__2019-04-19__2019-05-02": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:30.110668+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-04-19",
+        "end_date": "2019-05-02",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-04-19__2019-05-02.json"
+      }
+    },
+    "batch_0001__2019-05-03__2019-05-16": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:32.113962+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-05-03",
+        "end_date": "2019-05-16",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-05-03__2019-05-16.json"
+      }
+    },
+    "batch_0001__2019-05-17__2019-05-30": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:34.154780+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-05-17",
+        "end_date": "2019-05-30",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-05-17__2019-05-30.json"
+      }
+    },
+    "batch_0001__2019-05-31__2019-06-13": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:36.119496+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-05-31",
+        "end_date": "2019-06-13",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-05-31__2019-06-13.json"
+      }
+    },
+    "batch_0001__2019-06-14__2019-06-27": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:38.120511+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-06-14",
+        "end_date": "2019-06-27",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-06-14__2019-06-27.json"
+      }
+    },
+    "batch_0001__2019-06-28__2019-07-11": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:40.152679+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-06-28",
+        "end_date": "2019-07-11",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-06-28__2019-07-11.json"
+      }
+    },
+    "batch_0001__2019-07-12__2019-07-25": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:42.731485+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-07-12",
+        "end_date": "2019-07-25",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-07-12__2019-07-25.json"
+      }
+    },
+    "batch_0001__2019-07-26__2019-08-08": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:44.885944+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-07-26",
+        "end_date": "2019-08-08",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-07-26__2019-08-08.json"
+      }
+    },
+    "batch_0001__2019-08-09__2019-08-22": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:46.154933+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-08-09",
+        "end_date": "2019-08-22",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-08-09__2019-08-22.json"
+      }
+    },
+    "batch_0001__2019-08-23__2019-09-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:48.128546+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-08-23",
+        "end_date": "2019-09-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-08-23__2019-09-05.json"
+      }
+    },
+    "batch_0001__2019-09-06__2019-09-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:50.121261+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-09-06",
+        "end_date": "2019-09-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-09-06__2019-09-19.json"
+      }
+    },
+    "batch_0001__2019-09-20__2019-10-03": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:52.249891+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-09-20",
+        "end_date": "2019-10-03",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-09-20__2019-10-03.json"
+      }
+    },
+    "batch_0001__2019-10-04__2019-10-17": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:54.124809+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-10-04",
+        "end_date": "2019-10-17",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-10-04__2019-10-17.json"
+      }
+    },
+    "batch_0001__2019-10-18__2019-10-31": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:56.128058+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-10-18",
+        "end_date": "2019-10-31",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-10-18__2019-10-31.json"
+      }
+    },
+    "batch_0001__2019-11-01__2019-11-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:32:58.127007+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-11-01",
+        "end_date": "2019-11-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-11-01__2019-11-14.json"
+      }
+    },
+    "batch_0001__2019-11-15__2019-11-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:00.169265+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-11-15",
+        "end_date": "2019-11-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-11-15__2019-11-28.json"
+      }
+    },
+    "batch_0001__2019-11-29__2019-12-12": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:02.136140+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-11-29",
+        "end_date": "2019-12-12",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-11-29__2019-12-12.json"
+      }
+    },
+    "batch_0001__2019-12-13__2019-12-26": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:04.127061+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-12-13",
+        "end_date": "2019-12-26",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-12-13__2019-12-26.json"
+      }
+    },
+    "batch_0001__2019-12-27__2020-01-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:07.043704+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2019-12-27",
+        "end_date": "2020-01-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2019-12-27__2020-01-09.json"
+      }
+    },
+    "batch_0001__2020-01-10__2020-01-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:08.129823+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-01-10",
+        "end_date": "2020-01-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-01-10__2020-01-23.json"
+      }
+    },
+    "batch_0001__2020-01-24__2020-02-06": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:10.131528+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-01-24",
+        "end_date": "2020-02-06",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-01-24__2020-02-06.json"
+      }
+    },
+    "batch_0001__2020-02-07__2020-02-20": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:12.171834+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-02-07",
+        "end_date": "2020-02-20",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-02-07__2020-02-20.json"
+      }
+    },
+    "batch_0001__2020-02-21__2020-03-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:14.136314+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-02-21",
+        "end_date": "2020-03-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-02-21__2020-03-05.json"
+      }
+    },
+    "batch_0001__2020-03-06__2020-03-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:16.139490+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-03-06",
+        "end_date": "2020-03-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-03-06__2020-03-19.json"
+      }
+    },
+    "batch_0001__2020-03-20__2020-04-02": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:18.169073+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-03-20",
+        "end_date": "2020-04-02",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-03-20__2020-04-02.json"
+      }
+    },
+    "batch_0001__2020-04-03__2020-04-16": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:20.137015+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-04-03",
+        "end_date": "2020-04-16",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-04-03__2020-04-16.json"
+      }
+    },
+    "batch_0001__2020-04-17__2020-04-30": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:22.133088+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-04-17",
+        "end_date": "2020-04-30",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-04-17__2020-04-30.json"
+      }
+    },
+    "batch_0001__2020-05-01__2020-05-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:24.134119+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-05-01",
+        "end_date": "2020-05-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-05-01__2020-05-14.json"
+      }
+    },
+    "batch_0001__2020-05-15__2020-05-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:26.676416+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-05-15",
+        "end_date": "2020-05-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-05-15__2020-05-28.json"
+      }
+    },
+    "batch_0001__2020-05-29__2020-06-11": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:28.144297+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-05-29",
+        "end_date": "2020-06-11",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-05-29__2020-06-11.json"
+      }
+    },
+    "batch_0001__2020-06-12__2020-06-25": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:30.141012+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-06-12",
+        "end_date": "2020-06-25",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-06-12__2020-06-25.json"
+      }
+    },
+    "batch_0001__2020-06-26__2020-07-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:32.275573+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-06-26",
+        "end_date": "2020-07-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-06-26__2020-07-09.json"
+      }
+    },
+    "batch_0001__2020-07-10__2020-07-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:34.137786+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-07-10",
+        "end_date": "2020-07-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-07-10__2020-07-23.json"
+      }
+    },
+    "batch_0001__2020-07-24__2020-08-06": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:36.152725+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-07-24",
+        "end_date": "2020-08-06",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-07-24__2020-08-06.json"
+      }
+    },
+    "batch_0001__2020-08-07__2020-08-20": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:38.155157+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-08-07",
+        "end_date": "2020-08-20",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-08-07__2020-08-20.json"
+      }
+    },
+    "batch_0001__2020-08-21__2020-09-03": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:40.142405+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-08-21",
+        "end_date": "2020-09-03",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-08-21__2020-09-03.json"
+      }
+    },
+    "batch_0001__2020-09-04__2020-09-17": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:42.156134+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-09-04",
+        "end_date": "2020-09-17",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-09-04__2020-09-17.json"
+      }
+    },
+    "batch_0001__2020-09-18__2020-10-01": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:44.160532+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-09-18",
+        "end_date": "2020-10-01",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-09-18__2020-10-01.json"
+      }
+    },
+    "batch_0001__2020-10-02__2020-10-15": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:46.141779+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-10-02",
+        "end_date": "2020-10-15",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-10-02__2020-10-15.json"
+      }
+    },
+    "batch_0001__2020-10-16__2020-10-29": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:48.141721+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-10-16",
+        "end_date": "2020-10-29",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-10-16__2020-10-29.json"
+      }
+    },
+    "batch_0001__2020-10-30__2020-11-12": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:50.145569+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-10-30",
+        "end_date": "2020-11-12",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-10-30__2020-11-12.json"
+      }
+    },
+    "batch_0001__2020-11-13__2020-11-26": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:52.217414+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-11-13",
+        "end_date": "2020-11-26",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-11-13__2020-11-26.json"
+      }
+    },
+    "batch_0001__2020-11-27__2020-12-10": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:54.142643+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-11-27",
+        "end_date": "2020-12-10",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-11-27__2020-12-10.json"
+      }
+    },
+    "batch_0001__2020-12-11__2020-12-24": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:56.144726+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-12-11",
+        "end_date": "2020-12-24",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-12-11__2020-12-24.json"
+      }
+    },
+    "batch_0001__2020-12-25__2021-01-07": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:33:58.845074+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2020-12-25",
+        "end_date": "2021-01-07",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2020-12-25__2021-01-07.json"
+      }
+    },
+    "batch_0001__2021-01-08__2021-01-21": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:00.147975+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-01-08",
+        "end_date": "2021-01-21",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-01-08__2021-01-21.json"
+      }
+    },
+    "batch_0001__2021-01-22__2021-02-04": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:02.150149+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-01-22",
+        "end_date": "2021-02-04",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-01-22__2021-02-04.json"
+      }
+    },
+    "batch_0001__2021-02-05__2021-02-18": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:04.161541+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-02-05",
+        "end_date": "2021-02-18",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-02-05__2021-02-18.json"
+      }
+    },
+    "batch_0001__2021-02-19__2021-03-04": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:06.149536+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-02-19",
+        "end_date": "2021-03-04",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-02-19__2021-03-04.json"
+      }
+    },
+    "batch_0001__2021-03-05__2021-03-18": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:08.149282+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-03-05",
+        "end_date": "2021-03-18",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-03-05__2021-03-18.json"
+      }
+    },
+    "batch_0001__2021-03-19__2021-04-01": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:10.151604+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-03-19",
+        "end_date": "2021-04-01",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-03-19__2021-04-01.json"
+      }
+    },
+    "batch_0001__2021-04-02__2021-04-15": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:12.199515+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-04-02",
+        "end_date": "2021-04-15",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-04-02__2021-04-15.json"
+      }
+    },
+    "batch_0001__2021-04-16__2021-04-29": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:14.151176+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-04-16",
+        "end_date": "2021-04-29",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-04-16__2021-04-29.json"
+      }
+    },
+    "batch_0001__2021-04-30__2021-05-13": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:16.158259+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-04-30",
+        "end_date": "2021-05-13",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-04-30__2021-05-13.json"
+      }
+    },
+    "batch_0001__2021-05-14__2021-05-27": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:18.174516+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-05-14",
+        "end_date": "2021-05-27",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-05-14__2021-05-27.json"
+      }
+    },
+    "batch_0001__2021-05-28__2021-06-10": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:20.169461+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-05-28",
+        "end_date": "2021-06-10",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-05-28__2021-06-10.json"
+      }
+    },
+    "batch_0001__2021-06-11__2021-06-24": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:22.171536+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-06-11",
+        "end_date": "2021-06-24",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-06-11__2021-06-24.json"
+      }
+    },
+    "batch_0001__2021-06-25__2021-07-08": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:24.172693+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-06-25",
+        "end_date": "2021-07-08",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-06-25__2021-07-08.json"
+      }
+    },
+    "batch_0001__2021-07-09__2021-07-22": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:26.162183+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-07-09",
+        "end_date": "2021-07-22",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-07-09__2021-07-22.json"
+      }
+    },
+    "batch_0001__2021-07-23__2021-08-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:28.155475+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-07-23",
+        "end_date": "2021-08-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-07-23__2021-08-05.json"
+      }
+    },
+    "batch_0001__2021-08-06__2021-08-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:30.210813+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-08-06",
+        "end_date": "2021-08-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-08-06__2021-08-19.json"
+      }
+    },
+    "batch_0001__2021-08-20__2021-09-02": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:32.166731+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-08-20",
+        "end_date": "2021-09-02",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-08-20__2021-09-02.json"
+      }
+    },
+    "batch_0001__2021-09-03__2021-09-16": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:34.158278+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-09-03",
+        "end_date": "2021-09-16",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-09-03__2021-09-16.json"
+      }
+    },
+    "batch_0001__2021-09-17__2021-09-30": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:36.164203+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-09-17",
+        "end_date": "2021-09-30",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-09-17__2021-09-30.json"
+      }
+    },
+    "batch_0001__2021-10-01__2021-10-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:38.176913+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-10-01",
+        "end_date": "2021-10-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-10-01__2021-10-14.json"
+      }
+    },
+    "batch_0001__2021-10-15__2021-10-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:40.163850+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-10-15",
+        "end_date": "2021-10-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-10-15__2021-10-28.json"
+      }
+    },
+    "batch_0001__2021-10-29__2021-11-11": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:42.159938+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-10-29",
+        "end_date": "2021-11-11",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-10-29__2021-11-11.json"
+      }
+    },
+    "batch_0001__2021-11-12__2021-11-25": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:44.179460+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-11-12",
+        "end_date": "2021-11-25",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-11-12__2021-11-25.json"
+      }
+    },
+    "batch_0001__2021-11-26__2021-12-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:46.167750+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-11-26",
+        "end_date": "2021-12-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-11-26__2021-12-09.json"
+      }
+    },
+    "batch_0001__2021-12-10__2021-12-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:48.174152+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-12-10",
+        "end_date": "2021-12-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-12-10__2021-12-23.json"
+      }
+    },
+    "batch_0001__2021-12-24__2022-01-06": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:50.580532+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2021-12-24",
+        "end_date": "2022-01-06",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2021-12-24__2022-01-06.json"
+      }
+    },
+    "batch_0001__2022-01-07__2022-01-20": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:52.552428+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-01-07",
+        "end_date": "2022-01-20",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-01-07__2022-01-20.json"
+      }
+    },
+    "batch_0001__2022-01-21__2022-02-03": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:54.488048+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-01-21",
+        "end_date": "2022-02-03",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-01-21__2022-02-03.json"
+      }
+    },
+    "batch_0001__2022-02-04__2022-02-17": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:56.171007+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-02-04",
+        "end_date": "2022-02-17",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-02-04__2022-02-17.json"
+      }
+    },
+    "batch_0001__2022-02-18__2022-03-03": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:34:58.539530+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-02-18",
+        "end_date": "2022-03-03",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-02-18__2022-03-03.json"
+      }
+    },
+    "batch_0001__2022-03-04__2022-03-17": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:00.469793+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-03-04",
+        "end_date": "2022-03-17",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-03-04__2022-03-17.json"
+      }
+    },
+    "batch_0001__2022-03-18__2022-03-31": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:02.169087+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-03-18",
+        "end_date": "2022-03-31",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-03-18__2022-03-31.json"
+      }
+    },
+    "batch_0001__2022-04-01__2022-04-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:04.864508+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-04-01",
+        "end_date": "2022-04-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-04-01__2022-04-14.json"
+      }
+    },
+    "batch_0001__2022-04-15__2022-04-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:06.821348+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-04-15",
+        "end_date": "2022-04-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-04-15__2022-04-28.json"
+      }
+    },
+    "batch_0001__2022-04-29__2022-05-12": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:08.172661+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-04-29",
+        "end_date": "2022-05-12",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-04-29__2022-05-12.json"
+      }
+    },
+    "batch_0001__2022-05-13__2022-05-26": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:10.720551+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-05-13",
+        "end_date": "2022-05-26",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-05-13__2022-05-26.json"
+      }
+    },
+    "batch_0001__2022-05-27__2022-06-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:12.531231+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-05-27",
+        "end_date": "2022-06-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-05-27__2022-06-09.json"
+      }
+    },
+    "batch_0001__2022-06-10__2022-06-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:14.173899+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-06-10",
+        "end_date": "2022-06-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-06-10__2022-06-23.json"
+      }
+    },
+    "batch_0001__2022-06-24__2022-07-07": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:16.664674+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-06-24",
+        "end_date": "2022-07-07",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-06-24__2022-07-07.json"
+      }
+    },
+    "batch_0001__2022-07-08__2022-07-21": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:18.961038+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-07-08",
+        "end_date": "2022-07-21",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-07-08__2022-07-21.json"
+      }
+    },
+    "batch_0001__2022-07-22__2022-08-04": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:20.177159+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-07-22",
+        "end_date": "2022-08-04",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-07-22__2022-08-04.json"
+      }
+    },
+    "batch_0001__2022-08-05__2022-08-18": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:22.683141+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-08-05",
+        "end_date": "2022-08-18",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-08-05__2022-08-18.json"
+      }
+    },
+    "batch_0001__2022-08-19__2022-09-01": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:24.689318+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-08-19",
+        "end_date": "2022-09-01",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-08-19__2022-09-01.json"
+      }
+    },
+    "batch_0001__2022-09-02__2022-09-15": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:26.187208+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-09-02",
+        "end_date": "2022-09-15",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-09-02__2022-09-15.json"
+      }
+    },
+    "batch_0001__2022-09-16__2022-09-29": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:28.594795+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-09-16",
+        "end_date": "2022-09-29",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-09-16__2022-09-29.json"
+      }
+    },
+    "batch_0001__2022-09-30__2022-10-13": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:30.692463+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-09-30",
+        "end_date": "2022-10-13",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-09-30__2022-10-13.json"
+      }
+    },
+    "batch_0001__2022-10-14__2022-10-27": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:32.177610+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-10-14",
+        "end_date": "2022-10-27",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-10-14__2022-10-27.json"
+      }
+    },
+    "batch_0001__2022-10-28__2022-11-10": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:34.594670+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-10-28",
+        "end_date": "2022-11-10",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-10-28__2022-11-10.json"
+      }
+    },
+    "batch_0001__2022-11-11__2022-11-24": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:37.294661+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-11-11",
+        "end_date": "2022-11-24",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-11-11__2022-11-24.json"
+      }
+    },
+    "batch_0001__2022-11-25__2022-12-08": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:38.183150+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-11-25",
+        "end_date": "2022-12-08",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-11-25__2022-12-08.json"
+      }
+    },
+    "batch_0001__2022-12-09__2022-12-22": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:40.727626+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-12-09",
+        "end_date": "2022-12-22",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-12-09__2022-12-22.json"
+      }
+    },
+    "batch_0001__2022-12-23__2023-01-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:42.609179+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2022-12-23",
+        "end_date": "2023-01-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2022-12-23__2023-01-05.json"
+      }
+    },
+    "batch_0001__2023-01-06__2023-01-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:44.184703+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-01-06",
+        "end_date": "2023-01-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-01-06__2023-01-19.json"
+      }
+    },
+    "batch_0001__2023-01-20__2023-02-02": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:46.517241+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-01-20",
+        "end_date": "2023-02-02",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-01-20__2023-02-02.json"
+      }
+    },
+    "batch_0001__2023-02-03__2023-02-16": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:48.458071+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-02-03",
+        "end_date": "2023-02-16",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-02-03__2023-02-16.json"
+      }
+    },
+    "batch_0001__2023-02-17__2023-03-02": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:50.189621+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-02-17",
+        "end_date": "2023-03-02",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-02-17__2023-03-02.json"
+      }
+    },
+    "batch_0001__2023-03-03__2023-03-16": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:52.415321+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-03-03",
+        "end_date": "2023-03-16",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-03-03__2023-03-16.json"
+      }
+    },
+    "batch_0001__2023-03-17__2023-03-30": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:54.527743+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-03-17",
+        "end_date": "2023-03-30",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-03-17__2023-03-30.json"
+      }
+    },
+    "batch_0001__2023-03-31__2023-04-13": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:56.189043+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-03-31",
+        "end_date": "2023-04-13",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-03-31__2023-04-13.json"
+      }
+    },
+    "batch_0001__2023-04-14__2023-04-27": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:35:58.483709+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-04-14",
+        "end_date": "2023-04-27",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-04-14__2023-04-27.json"
+      }
+    },
+    "batch_0001__2023-04-28__2023-05-11": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:00.471197+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-04-28",
+        "end_date": "2023-05-11",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-04-28__2023-05-11.json"
+      }
+    },
+    "batch_0001__2023-05-12__2023-05-25": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:02.190164+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-05-12",
+        "end_date": "2023-05-25",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-05-12__2023-05-25.json"
+      }
+    },
+    "batch_0001__2023-05-26__2023-06-08": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:04.613112+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-05-26",
+        "end_date": "2023-06-08",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-05-26__2023-06-08.json"
+      }
+    },
+    "batch_0001__2023-06-09__2023-06-22": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:06.751644+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-06-09",
+        "end_date": "2023-06-22",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-06-09__2023-06-22.json"
+      }
+    },
+    "batch_0001__2023-06-23__2023-07-06": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:08.194159+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-06-23",
+        "end_date": "2023-07-06",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-06-23__2023-07-06.json"
+      }
+    },
+    "batch_0001__2023-07-07__2023-07-20": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:10.526278+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-07-07",
+        "end_date": "2023-07-20",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-07-07__2023-07-20.json"
+      }
+    },
+    "batch_0001__2023-07-21__2023-08-03": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:12.484272+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-07-21",
+        "end_date": "2023-08-03",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-07-21__2023-08-03.json"
+      }
+    },
+    "batch_0001__2023-08-04__2023-08-17": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:14.193848+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-08-04",
+        "end_date": "2023-08-17",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-08-04__2023-08-17.json"
+      }
+    },
+    "batch_0001__2023-08-18__2023-08-31": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:16.611095+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-08-18",
+        "end_date": "2023-08-31",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-08-18__2023-08-31.json"
+      }
+    },
+    "batch_0001__2023-09-01__2023-09-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:18.486167+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-09-01",
+        "end_date": "2023-09-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-09-01__2023-09-14.json"
+      }
+    },
+    "batch_0001__2023-09-15__2023-09-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:20.197970+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-09-15",
+        "end_date": "2023-09-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-09-15__2023-09-28.json"
+      }
+    },
+    "batch_0001__2023-09-29__2023-10-12": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:22.401085+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-09-29",
+        "end_date": "2023-10-12",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-09-29__2023-10-12.json"
+      }
+    },
+    "batch_0001__2023-10-13__2023-10-26": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:24.425340+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-10-13",
+        "end_date": "2023-10-26",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-10-13__2023-10-26.json"
+      }
+    },
+    "batch_0001__2023-10-27__2023-11-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:26.197152+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-10-27",
+        "end_date": "2023-11-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-10-27__2023-11-09.json"
+      }
+    },
+    "batch_0001__2023-11-10__2023-11-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:28.425317+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-11-10",
+        "end_date": "2023-11-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-11-10__2023-11-23.json"
+      }
+    },
+    "batch_0001__2023-11-24__2023-12-07": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:30.489768+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-11-24",
+        "end_date": "2023-12-07",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-11-24__2023-12-07.json"
+      }
+    },
+    "batch_0001__2023-12-08__2023-12-21": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:32.202062+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-12-08",
+        "end_date": "2023-12-21",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-12-08__2023-12-21.json"
+      }
+    },
+    "batch_0001__2023-12-22__2024-01-04": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:34.287948+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2023-12-22",
+        "end_date": "2024-01-04",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2023-12-22__2024-01-04.json"
+      }
+    },
+    "batch_0001__2024-01-05__2024-01-18": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:36.365131+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-01-05",
+        "end_date": "2024-01-18",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-01-05__2024-01-18.json"
+      }
+    },
+    "batch_0001__2024-01-19__2024-02-01": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:38.201272+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-01-19",
+        "end_date": "2024-02-01",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-01-19__2024-02-01.json"
+      }
+    },
+    "batch_0001__2024-02-02__2024-02-15": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:40.404979+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-02-02",
+        "end_date": "2024-02-15",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-02-02__2024-02-15.json"
+      }
+    },
+    "batch_0001__2024-02-16__2024-02-29": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:42.413661+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-02-16",
+        "end_date": "2024-02-29",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-02-16__2024-02-29.json"
+      }
+    },
+    "batch_0001__2024-03-01__2024-03-14": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:44.206121+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-03-01",
+        "end_date": "2024-03-14",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-03-01__2024-03-14.json"
+      }
+    },
+    "batch_0001__2024-03-15__2024-03-28": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:46.414602+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-03-15",
+        "end_date": "2024-03-28",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-03-15__2024-03-28.json"
+      }
+    },
+    "batch_0001__2024-03-29__2024-04-11": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:48.380761+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-03-29",
+        "end_date": "2024-04-11",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-03-29__2024-04-11.json"
+      }
+    },
+    "batch_0001__2024-04-12__2024-04-25": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:50.206062+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-04-12",
+        "end_date": "2024-04-25",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-04-12__2024-04-25.json"
+      }
+    },
+    "batch_0001__2024-04-26__2024-05-09": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:52.383672+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-04-26",
+        "end_date": "2024-05-09",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-04-26__2024-05-09.json"
+      }
+    },
+    "batch_0001__2024-05-10__2024-05-23": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:54.440534+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-05-10",
+        "end_date": "2024-05-23",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-05-10__2024-05-23.json"
+      }
+    },
+    "batch_0001__2024-05-24__2024-06-06": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:56.208073+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-05-24",
+        "end_date": "2024-06-06",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-05-24__2024-06-06.json"
+      }
+    },
+    "batch_0001__2024-06-07__2024-06-20": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:36:58.394002+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-06-07",
+        "end_date": "2024-06-20",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-06-07__2024-06-20.json"
+      }
+    },
+    "batch_0001__2024-06-21__2024-07-04": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:00.405754+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-06-21",
+        "end_date": "2024-07-04",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-06-21__2024-07-04.json"
+      }
+    },
+    "batch_0001__2024-07-05__2024-07-18": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:02.212062+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-07-05",
+        "end_date": "2024-07-18",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-07-05__2024-07-18.json"
+      }
+    },
+    "batch_0001__2024-07-19__2024-08-01": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:04.471514+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-07-19",
+        "end_date": "2024-08-01",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-07-19__2024-08-01.json"
+      }
+    },
+    "batch_0001__2024-08-02__2024-08-15": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:06.422004+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-08-02",
+        "end_date": "2024-08-15",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-08-02__2024-08-15.json"
+      }
+    },
+    "batch_0001__2024-08-16__2024-08-29": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:08.213878+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-08-16",
+        "end_date": "2024-08-29",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-08-16__2024-08-29.json"
+      }
+    },
+    "batch_0001__2024-08-30__2024-09-12": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:10.514659+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-08-30",
+        "end_date": "2024-09-12",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-08-30__2024-09-12.json"
+      }
+    },
+    "batch_0001__2024-09-13__2024-09-26": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:12.408784+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-09-13",
+        "end_date": "2024-09-26",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-09-13__2024-09-26.json"
+      }
+    },
+    "batch_0001__2024-09-27__2024-10-10": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:14.217306+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-09-27",
+        "end_date": "2024-10-10",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-09-27__2024-10-10.json"
+      }
+    },
+    "batch_0001__2024-10-11__2024-10-24": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:16.467082+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-10-11",
+        "end_date": "2024-10-24",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-10-11__2024-10-24.json"
+      }
+    },
+    "batch_0001__2024-10-25__2024-11-07": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:18.373805+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-10-25",
+        "end_date": "2024-11-07",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-10-25__2024-11-07.json"
+      }
+    },
+    "batch_0001__2024-11-08__2024-11-21": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:20.215410+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-11-08",
+        "end_date": "2024-11-21",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-11-08__2024-11-21.json"
+      }
+    },
+    "batch_0001__2024-11-22__2024-12-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:22.454330+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-11-22",
+        "end_date": "2024-12-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-11-22__2024-12-05.json"
+      }
+    },
+    "batch_0001__2024-12-06__2024-12-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:24.425894+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-12-06",
+        "end_date": "2024-12-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-12-06__2024-12-19.json"
+      }
+    },
+    "batch_0001__2024-12-20__2025-01-02": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:26.219035+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2024-12-20",
+        "end_date": "2025-01-02",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2024-12-20__2025-01-02.json"
+      }
+    },
+    "batch_0001__2025-01-03__2025-01-16": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:28.440780+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-01-03",
+        "end_date": "2025-01-16",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-01-03__2025-01-16.json"
+      }
+    },
+    "batch_0001__2025-01-17__2025-01-30": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:30.512924+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-01-17",
+        "end_date": "2025-01-30",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-01-17__2025-01-30.json"
+      }
+    },
+    "batch_0001__2025-01-31__2025-02-13": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:32.223231+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-01-31",
+        "end_date": "2025-02-13",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-01-31__2025-02-13.json"
+      }
+    },
+    "batch_0001__2025-02-14__2025-02-27": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:34.440790+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-02-14",
+        "end_date": "2025-02-27",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-02-14__2025-02-27.json"
+      }
+    },
+    "batch_0001__2025-02-28__2025-03-13": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:36.464568+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-02-28",
+        "end_date": "2025-03-13",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-02-28__2025-03-13.json"
+      }
+    },
+    "batch_0001__2025-03-14__2025-03-27": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:38.229642+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-03-14",
+        "end_date": "2025-03-27",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-03-14__2025-03-27.json"
+      }
+    },
+    "batch_0001__2025-03-28__2025-04-10": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:40.545291+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-03-28",
+        "end_date": "2025-04-10",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-03-28__2025-04-10.json"
+      }
+    },
+    "batch_0001__2025-04-11__2025-04-24": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:42.486704+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-04-11",
+        "end_date": "2025-04-24",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-04-11__2025-04-24.json"
+      }
+    },
+    "batch_0001__2025-04-25__2025-05-08": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:44.225528+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-04-25",
+        "end_date": "2025-05-08",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-04-25__2025-05-08.json"
+      }
+    },
+    "batch_0001__2025-05-09__2025-05-22": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:46.533678+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-05-09",
+        "end_date": "2025-05-22",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-05-09__2025-05-22.json"
+      }
+    },
+    "batch_0001__2025-05-23__2025-06-05": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:48.504316+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-05-23",
+        "end_date": "2025-06-05",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-05-23__2025-06-05.json"
+      }
+    },
+    "batch_0001__2025-06-06__2025-06-19": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:50.233728+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-06-06",
+        "end_date": "2025-06-19",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-06-06__2025-06-19.json"
+      }
+    },
+    "batch_0001__2025-06-20__2025-07-03": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:52.407730+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-06-20",
+        "end_date": "2025-07-03",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-06-20__2025-07-03.json"
+      }
+    },
+    "batch_0001__2025-07-04__2025-07-17": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:54.526093+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-07-04",
+        "end_date": "2025-07-17",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-07-04__2025-07-17.json"
+      }
+    },
+    "batch_0001__2025-07-18__2025-07-31": {
+      "status": "success",
+      "completed_at": "2026-09-15T10:37:56.230640+00:00",
+      "metadata": {
+        "locations": 20,
+        "start_date": "2025-07-18",
+        "end_date": "2025-07-31",
+        "raw_file": "D:\\Weather and Climate Big Data Analytics Project Using Open-Meteo API\\weather-clustering\\data\\raw\\historical\\era5_2016-01-01_2025-12-31\\batch_0001__2025-07-18__2025-07-31.json"
+      }
+    },
+    "batch_0001__2025-08-01__2025-08-14": {
+      "status": "failed",
+      "failed_at": "2026-09-15T10:39:00.811209+00:00",
+      "error": "Open-Meteo request failed after 5 attempts.",
+      "metadata": {
+        "start_date": "2025-08-01",
+        "end_date": "2025-08-14"
+      }
+    }
+  }
+}

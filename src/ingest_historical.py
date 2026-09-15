@@ -14,10 +14,12 @@ import pandas as pd
 from budget import ApiBudget, BudgetExceededError
 from checkpoint import CheckpointManager
 from config import (
+    API_BUDGET_FILE,
     BATCH_SIZE,
-    CHECKPOINT_DIR,
+    CHECKPOINT_FILE,
     DAILY_API_SAFETY_LIMIT,
     DAILY_VARIABLES,
+    EXPECTED_LOCATION_COUNT,
     HISTORICAL_API_URL,
     HISTORICAL_END_DATE,
     HISTORICAL_START_DATE,
@@ -88,6 +90,13 @@ def load_locations() -> pd.DataFrame:
     df = pd.read_csv(
         LOCATIONS_FILE
     )
+
+    if len(df) != EXPECTED_LOCATION_COUNT:
+        raise ValueError(
+            f"Expected exactly "
+            f"{EXPECTED_LOCATION_COUNT} locations, "
+            f"but found {len(df)}."
+        )
 
     required = [
         "location_id",
@@ -171,15 +180,8 @@ def raw_file_path(
     work_id_value: str,
 ) -> Path:
 
-    extraction_name = (
-        f"era5_"
-        f"{HISTORICAL_START_DATE}_"
-        f"{HISTORICAL_END_DATE}"
-    )
-
     return (
         RAW_DIR
-        / extraction_name
         / f"{work_id_value}.json"
     )
 
@@ -291,15 +293,11 @@ def run_ingestion(
     )
 
     checkpoint = CheckpointManager(
-        CHECKPOINT_DIR
-        / "historical_manifest.json"
+        CHECKPOINT_FILE
     )
 
     budget = ApiBudget(
-        budget_file=(
-            CHECKPOINT_DIR
-            / "api_budget.json"
-        ),
+        budget_file=API_BUDGET_FILE,
         daily_limit=DAILY_API_SAFETY_LIMIT,
     )
 

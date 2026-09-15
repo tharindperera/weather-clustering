@@ -9,7 +9,7 @@ License: Creative Commons Attribution 4.0 (CC BY 4.0).
 ## Selection
 
 A deterministic selection procedure was applied to obtain
-500 geographically diverse cities from the source database.
+100 geographically diverse cities from the source database.
 
 Selection included:
 
@@ -17,12 +17,12 @@ Selection included:
 - valid latitude/longitude
 - preference for locations with known population
 - one representative record per city-country identity
-- a maximum of 15 selected locations per country
+- global geographic coverage
 
 ## Final dataset
 
-- Locations: 500
-- Countries represented: 177
+- Locations: 100
+- Countries represented: 80
 
 ## Columns
 
