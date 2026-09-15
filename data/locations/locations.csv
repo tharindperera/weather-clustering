@@ -1,0 +1,101 @@
+location_id,city,city_ascii,country,iso2,iso3,admin_name,capital,latitude,longitude,population
+1004993580,Kabul,Kabul,Afghanistan,AF,AFG,Kābul,primary,34.5328,69.1658,5333284.0
+1012973369,Algiers,Algiers,Algeria,DZ,DZA,Alger,primary,36.7764,3.0586,3004000.0
+1024949724,Luanda,Luanda,Angola,AO,AGO,Luanda,primary,-8.8383,13.2344,9051000.0
+1032717330,Buenos Aires,Buenos Aires,Argentina,AR,ARG,"Buenos Aires, Ciudad Autónoma de",primary,-34.5997,-58.3819,13971006.0
+1036074917,Sydney,Sydney,Australia,AU,AUS,New South Wales,admin,-33.8678,151.21,5450496.0
+1036533631,Melbourne,Melbourne,Australia,AU,AUS,Victoria,admin,-37.8142,144.9631,5350705.0
+1040261752,Vienna,Vienna,Austria,AT,AUT,Wien,primary,48.2083,16.3725,2223236.0
+1031946365,Baku,Baku,Azerbaijan,AZ,AZE,Bakı,primary,40.3667,49.8352,2300500.0
+1050529279,Dhaka,Dhaka,Bangladesh,BD,BGD,Dhaka,primary,23.7289,90.3944,19134000.0
+1050830722,Chattogram,Chattogram,Bangladesh,BD,BGD,Chattogram,admin,22.335,91.8325,5253312.0
+1068000064,La Paz,La Paz,Bolivia,BO,BOL,La Paz,primary,-16.4958,-68.1333,2063633.0
+1076532519,São Paulo,Sao Paulo,Brazil,BR,BRA,São Paulo,admin,-23.5504,-46.6339,23086000.0
+1076887657,Rio de Janeiro,Rio de Janeiro,Brazil,BR,BRA,Rio de Janeiro,admin,-22.9111,-43.2056,11616000.0
+1076967355,Belo Horizonte,Belo Horizonte,Brazil,BR,BRA,Minas Gerais,admin,-19.9281,-43.9419,6198834.0
+1854029208,Ouagadougou,Ouagadougou,Burkina Faso,BF,BFA,Centre,primary,12.3686,-1.5275,3063271.0
+1104616656,Rangoon,Rangoon,Burma,MM,MMR,Yangon,primary,16.8053,96.1561,5160512.0
+1116260534,Phnom Penh,Phnom Penh,Cambodia,KH,KHM,Phnom Penh,primary,11.5696,104.921,2129371.0
+1120494607,Douala,Douala,Cameroon,CM,CMR,Littoral,admin,4.05,9.7,3987298.0
+1124279679,Toronto,Toronto,Canada,CA,CAN,Ontario,admin,43.7417,-79.3733,5647656.0
+1152554349,Santiago,Santiago,Chile,CL,CHL,Región Metropolitana,primary,-33.4375,-70.65,7171000.0
+1156237133,Guangzhou,Guangzhou,China,CN,CHN,Guangdong,admin,23.13,113.26,26940000.0
+1156073548,Shanghai,Shanghai,China,CN,CHN,Shanghai,admin,31.2325,121.4692,24870895.0
+1156936556,Chongqing,Chongqing,China,CN,CHN,Chongqing,admin,29.55,106.5069,22251500.0
+1170483426,Bogotá,Bogota,Colombia,CO,COL,Bogotá,primary,4.6097,-74.0817,7968095.0
+1178340306,Brazzaville,Brazzaville,Congo (Brazzaville),CG,COG,Brazzaville,primary,-4.2694,15.2711,2813480.0
+1180000363,Kinshasa,Kinshasa,Congo (Kinshasa),CD,COD,Kinshasa,primary,-4.3233,15.3081,16316000.0
+1192752771,Havana,Havana,Cuba,CU,CUB,La Habana,primary,23.1367,-82.3589,2146237.0
+1384207980,Abidjan,Abidjan,Côte d’Ivoire,CI,CIV,Abidjan,primary,5.3364,-4.0267,5616633.0
+1218802178,Guayaquil,Guayaquil,Ecuador,EC,ECU,Guayas,admin,-2.19,-79.8875,3094420.0
+1818253931,Cairo,Cairo,Egypt,EG,EGY,Al Qāhirah,primary,30.0444,31.2358,20296000.0
+1818695837,Alexandria,Alexandria,Egypt,EG,EGY,Al Iskandarīyah,admin,31.1975,29.8925,5362517.0
+1231824991,Addis Ababa,Addis Ababa,Ethiopia,ET,ETH,Ādīs Ābeba,primary,9.0358,38.7525,5704000.0
+1250015082,Paris,Paris,France,FR,FRA,Île-de-France,primary,48.8567,2.3522,11060000.0
+1276451290,Berlin,Berlin,Germany,DE,DEU,Berlin,primary,52.5167,13.3833,4679500.0
+1288181103,Kumasi,Kumasi,Ghana,GH,GHA,Ashanti,admin,6.7,-1.625,3490030.0
+1300715560,Athens,Athens,Greece,GR,GRC,Attikí,primary,37.9842,23.7281,3059764.0
+1332401940,Port-au-Prince,Port-au-Prince,Haiti,HT,HTI,Ouest,primary,18.5469,-72.3403,2914190.0
+1344982653,Hong Kong,Hong Kong,Hong Kong,HK,HKG,,primary,22.2783,114.1586,7450000.0
+1348611435,Budapest,Budapest,Hungary,HU,HUN,Budapest,primary,47.4983,19.0408,3067751.0
+1356226629,Mumbai,Mumbai,India,IN,IND,Mahārāshtra,admin,19.0758,72.8775,24973000.0
+1356060520,Kolkāta,Kolkata,India,IN,IND,West Bengal,admin,22.5675,88.37,21747000.0
+1356872604,Delhi,Delhi,India,IN,IND,Delhi,admin,28.66,77.23,16349831.0
+1360771077,Jakarta,Jakarta,Indonesia,ID,IDN,Jakarta,primary,-6.1753,106.8269,33756000.0
+1360313023,Bandung,Bandung,Indonesia,ID,IDN,Jawa Barat,admin,-6.9218,107.6071,7203000.0
+1360484663,Surabaya,Surabaya,Indonesia,ID,IDN,Jawa Timur,admin,-7.2463,112.7378,6373373.0
+1364305026,Tehran,Tehran,Iran,IR,IRN,Tehrān,primary,35.6889,51.3897,14148000.0
+1368596238,Baghdad,Baghdad,Iraq,IQ,IRQ,Baghdād,primary,33.3153,44.3661,8126755.0
+1380382862,Rome,Rome,Italy,IT,ITA,Lazio,primary,41.8931,12.4828,2748109.0
+1392685764,Tokyo,Tokyo,Japan,JP,JPN,Tōkyō,primary,35.685,139.7514,39105000.0
+1392419823,Ōsaka,Osaka,Japan,JP,JPN,Ōsaka,admin,34.6938,135.5021,15126000.0
+1392407472,Nagoya,Nagoya,Japan,JP,JPN,Aichi,admin,35.1814,136.9064,9197000.0
+1400522593,Amman,Amman,Jordan,JO,JOR,Al ‘Āşimah,primary,31.95,35.9333,4007526.0
+1398351701,Almaty,Almaty,Kazakhstan,KZ,KAZ,Almaty,admin,43.24,76.915,2228675.0
+1404000661,Nairobi,Nairobi,Kenya,KE,KEN,Nairobi City,primary,-1.2864,36.8172,4397073.0
+1408738594,Pyongyang,Pyongyang,"Korea, North",KP,PRK,P’yŏngyang,primary,39.0167,125.7475,2863000.0
+1410836482,Seoul,Seoul,"Korea, South",KR,KOR,Seoul,primary,37.56,126.99,23016000.0
+1414102075,Kuwait City,Kuwait City,Kuwait,KW,KWT,Al ‘Āşimah,primary,29.375,47.98,2989000.0
+1422847713,Beirut,Beirut,Lebanon,LB,LBN,Beyrouth,primary,33.8869,35.5131,2421354.0
+1450978461,Antananarivo,Antananarivo,Madagascar,MG,MDG,Antananarivo,primary,-18.91,47.525,2300000.0
+1458988644,Kuala Lumpur,Kuala Lumpur,Malaysia,MY,MYS,Kuala Lumpur,primary,3.1478,101.6953,8430775.0
+1466965925,Bamako,Bamako,Mali,ML,MLI,Bamako,primary,12.6458,-7.9922,4227569.0
+1484247881,Mexico City,Mexico City,Mexico,MX,MEX,Ciudad de México,primary,19.3538,-99.1359,23146802.0
+1484559591,Monterrey,Monterrey,Mexico,MX,MEX,Nuevo León,admin,25.6844,-100.3181,5324281.0
+1484950208,Guadalajara,Guadalajara,Mexico,MX,MEX,Jalisco,admin,20.6764,-103.3422,4721000.0
+1504175315,Casablanca,Casablanca,Morocco,MA,MAR,Casablanca-Settat,admin,33.5992,-7.62,3950000.0
+1566593751,Lagos,Lagos,Nigeria,NG,NGA,Lagos,minor,6.4561,3.3936,16637000.0
+1586129469,Karachi,Karachi,Pakistan,PK,PAK,Sindh,admin,24.86,67.01,20249000.0
+1586801463,Lahore,Lahore,Pakistan,PK,PAK,Punjab,admin,31.5497,74.3436,13004135.0
+1591672475,Panama City,Panama City,Panama,PA,PAN,Panamá,primary,8.9711,-79.5347,2100189.0
+1604728603,Lima,Lima,Peru,PE,PER,Lima,primary,-12.06,-77.0375,9751717.0
+1608618140,Manila,Manila,Philippines,PH,PHL,Manila,primary,14.5958,120.9772,13484482.0
+1616014994,Bieruń,Bierun,Poland,PL,POL,Śląskie,minor,50.0911,19.091,2746000.0
+1642414442,Bucharest,Bucharest,Romania,RO,ROU,Bucureşti,primary,44.4134,26.0978,2412530.0
+1643318494,Moscow,Moscow,Russia,RU,RUS,Moskva,primary,55.7506,37.6175,19100000.0
+1643616350,Saint Petersburg,Saint Petersburg,Russia,RU,RUS,Sankt-Peterburg,admin,59.95,30.3167,5601911.0
+1682999334,Riyadh,Riyadh,Saudi Arabia,SA,SAU,Ar Riyāḑ,primary,24.65,46.71,7237000.0
+1702341327,Singapore,Singapore,Singapore,SG,SGP,,primary,1.3,103.8,5453566.0
+1706893395,Mogadishu,Mogadishu,Somalia,SO,SOM,Banaadir,primary,2.0392,45.3419,2120000.0
+1710550792,Johannesburg,Johannesburg,South Africa,ZA,ZAF,Gauteng,admin,-26.2044,28.0416,4803262.0
+1724616994,Madrid,Madrid,Spain,ES,ESP,Madrid,primary,40.4169,-3.7033,6211000.0
+1724594040,Barcelona,Barcelona,Spain,ES,ESP,Catalonia,admin,41.3825,2.1769,4840000.0
+1144251314,Colombo,Colombo,Sri Lanka,LK,LKA,Western,primary,6.9267,79.8606,2323826.0
+1729268475,Khartoum,Khartoum,Sudan,SD,SDN,Khartoum,primary,15.6031,32.5265,7869000.0
+1760685964,Damascus,Damascus,Syria,SY,SYR,Dimashq,primary,33.5131,36.2919,2685360.0
+1158127875,Taoyuan District,Taoyuan District,Taiwan,TW,TWN,Taoyuan,admin,24.9913,121.3143,8535000.0
+1834843853,Dar es Salaam,Dar es Salaam,Tanzania,TZ,TZA,Dar es Salaam,admin,-6.8161,39.2803,7962000.0
+1764068610,Bangkok,Bangkok,Thailand,TH,THA,Krung Thep Maha Nakhon,primary,13.75,100.5167,18007000.0
+1768409132,Lomé,Lome,Togo,TG,TGO,Maritime,primary,6.13,1.2158,2188376.0
+1792756324,Istanbul,Istanbul,Turkey,TR,TUR,İstanbul,admin,41.01,28.9603,15382791.0
+1804382913,Kyiv,Kyiv,Ukraine,UA,UKR,Kyivska Oblast,primary,50.45,30.5236,2952301.0
+1784736618,Dubai,Dubai,United Arab Emirates,AE,ARE,Dubayy,admin,25.2697,55.3094,4945000.0
+1826645935,London,London,United Kingdom,GB,GBR,"London, City of",primary,51.5072,-0.1275,11262000.0
+1840034016,New York,New York,United States,US,USA,New York,admin,40.6943,-73.9249,19268388.0
+1840020491,Los Angeles,Los Angeles,United States,US,USA,California,,34.1141,-118.4068,11984083.0
+1840000494,Chicago,Chicago,United States,US,USA,Illinois,,41.8375,-87.6866,8609571.0
+1860331871,Tashkent,Tashkent,Uzbekistan,UZ,UZB,Toshkent,primary,41.3111,69.2797,2575431.0
+1862748204,Caracas,Caracas,Venezuela,VE,VEN,Miranda,primary,10.5061,-66.9144,2245744.0
+1704774326,Ho Chi Minh City,Ho Chi Minh City,Vietnam,VN,VNM,Hồ Chí Minh,admin,10.7756,106.7019,15136000.0
+1887750814,Sanaa,Sanaa,Yemen,YE,YEM,Amānat al ‘Āşimah,primary,15.35,44.2,2957000.0
+1894157390,Lusaka,Lusaka,Zambia,ZM,ZMB,Lusaka,primary,-15.4167,28.2833,2467563.0
