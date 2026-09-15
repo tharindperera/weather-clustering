@@ -1,6 +1,8 @@
-requests
-pandas<3
+streamlit==1.64.0
+pydeck
+pandas
 pyarrow
+pyspark
 duckdb
-pyspark==4.2.0
-huggingface_hub
+matplotlib
+scikit-learn
