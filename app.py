@@ -19,19 +19,34 @@ if str(PROJECT_ROOT / "weather-clustering" / "src") not in sys.path:
 if str(PROJECT_ROOT / "src") not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from dashboard_historical import (
-    HISTORICAL_VARIABLES,
-    VARIABLE_UNITS,
-    aggregate_monthly,
-    aggregate_yearly,
-    eda_summary,
-    filter_historical_data,
-    load_historical_data,
-    summarize_variable,
-)
-from realtime_weather import (
-    get_current_weather_for_city,
-)
+try:
+    from src.dashboard_historical import (
+        HISTORICAL_VARIABLES,
+        VARIABLE_UNITS,
+        aggregate_monthly,
+        aggregate_yearly,
+        eda_summary,
+        filter_historical_data,
+        load_historical_data,
+        summarize_variable,
+    )
+    from src.realtime_weather import (
+        get_current_weather_for_city,
+    )
+except ImportError:
+    from dashboard_historical import (
+        HISTORICAL_VARIABLES,
+        VARIABLE_UNITS,
+        aggregate_monthly,
+        aggregate_yearly,
+        eda_summary,
+        filter_historical_data,
+        load_historical_data,
+        summarize_variable,
+    )
+    from realtime_weather import (
+        get_current_weather_for_city,
+    )
 
 # ============================================================================
 # WMO WEATHER CODE TRANSLATIONS
