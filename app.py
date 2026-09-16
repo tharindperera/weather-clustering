@@ -510,7 +510,7 @@ if filtered_df.empty:
 else:
     map_df = filtered_df.copy()
     map_df["marker_color"] = map_df["cluster_id"].map(CLUSTER_COLORS)
-    map_df["marker_radius"] = 20000
+    map_df["marker_radius"] = 40000
     map_df["cluster_name"] = map_df["cluster_id"].map(CLUSTER_NAMES)
 
     deck = pdk.Deck(
@@ -559,9 +559,9 @@ else:
                     255,
                     220,
                 ],
-                line_width_min_pixels=1,
-                radius_min_pixels=4,
-                radius_max_pixels=18,
+                line_width_min_pixels=1.5,
+                radius_min_pixels=8,
+                radius_max_pixels=28,
                 stroked=True,
                 filled=True,
                 pickable=True,
