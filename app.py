@@ -338,56 +338,6 @@ Explore long-term weather patterns across **100 cities in 80 countries**. Locati
 st.divider()
 
 # ============================================================================
-# CLUSTER LEGEND
-# ============================================================================
-
-st.subheader("Weather Pattern Legend")
-
-legend_columns = st.columns(4)
-
-for column, cluster_id in zip(
-    legend_columns,
-    sorted(CLUSTER_NAMES),
-):
-    color = CLUSTER_HEX_COLORS[cluster_id]
-
-    with column:
-        st.markdown(
-            f"""
-        <div style="
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 12px;
-            padding: 12px 14px;
-            background: rgba(255,255,255,0.035);
-        ">
-            <div style="
-                display:flex;
-                align-items:center;
-                gap:10px;
-                font-weight:600;
-            ">
-                <span style="
-                    width:16px;
-                    height:16px;
-                    border-radius:50%;
-                    display:inline-block;
-                    background:{color};
-                "></span>
-                Cluster {cluster_id}
-            </div>
-            <div style="
-                margin-top:6px;
-                color:#B9C0CC;
-                font-size:0.9rem;
-            ">
-                {CLUSTER_NAMES[cluster_id]}
-            </div>
-        </div>
-        """,
-            unsafe_allow_html=True,
-        )
-
-# ============================================================================
 # METRICS
 # ============================================================================
 
@@ -492,6 +442,56 @@ else:
         use_container_width=True,
         hide_index=True,
     )
+
+# ============================================================================
+# CLUSTER LEGEND
+# ============================================================================
+
+st.subheader("Weather Pattern Legend")
+
+legend_columns = st.columns(4)
+
+for column, cluster_id in zip(
+    legend_columns,
+    sorted(CLUSTER_NAMES),
+):
+    color = CLUSTER_HEX_COLORS[cluster_id]
+
+    with column:
+        st.markdown(
+            f"""
+        <div style="
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 12px 14px;
+            background: rgba(255,255,255,0.035);
+        ">
+            <div style="
+                display:flex;
+                align-items:center;
+                gap:10px;
+                font-weight:600;
+            ">
+                <span style="
+                    width:16px;
+                    height:16px;
+                    border-radius:50%;
+                    display:inline-block;
+                    background:{color};
+                "></span>
+                Cluster {cluster_id}
+            </div>
+            <div style="
+                margin-top:6px;
+                color:#B9C0CC;
+                font-size:0.9rem;
+            ">
+                {CLUSTER_NAMES[cluster_id]}
+            </div>
+        </div>
+        """,
+            unsafe_allow_html=True,
+        )
 
 # ============================================================================
 # INTERACTIVE MAP
@@ -866,9 +866,15 @@ with historical_col1:
     )
 
 with historical_col2:
+    variable_options = list(HISTORICAL_VARIABLES.keys())
+    default_var_index = 0
+    if "Rainfall / Precipitation" in variable_options:
+        default_var_index = variable_options.index("Rainfall / Precipitation")
+
     historical_variable_label = st.selectbox(
         "Select weather indicator",
-        options=list(HISTORICAL_VARIABLES.keys()),
+        options=variable_options,
+        index=default_var_index,
         key="historical_variable",
     )
 
