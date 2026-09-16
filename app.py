@@ -510,7 +510,7 @@ if filtered_df.empty:
 else:
     map_df = filtered_df.copy()
     map_df["marker_color"] = map_df["cluster_id"].map(CLUSTER_COLORS)
-    map_df["marker_radius"] = 40000
+    map_df["marker_radius"] = 30000
     map_df["cluster_name"] = map_df["cluster_id"].map(CLUSTER_NAMES)
 
     deck = pdk.Deck(
@@ -560,8 +560,8 @@ else:
                     220,
                 ],
                 line_width_min_pixels=1.5,
-                radius_min_pixels=8,
-                radius_max_pixels=28,
+                radius_min_pixels=6,
+                radius_max_pixels=24,
                 stroked=True,
                 filled=True,
                 pickable=True,
@@ -570,13 +570,15 @@ else:
         ],
     )
 
-    map_event = st.pydeck_chart(
-        deck,
-        height=650,
-        selection_mode="single-object",
-        on_select="rerun",
-        key="weather_pattern_map",
-    )
+    map_col1, map_col2, map_col3 = st.columns([0.05, 0.90, 0.05])
+    with map_col2:
+        map_event = st.pydeck_chart(
+            deck,
+            height=585,
+            selection_mode="single-object",
+            on_select="rerun",
+            key="weather_pattern_map",
+        )
 
     # Process clicked marker
     try:
