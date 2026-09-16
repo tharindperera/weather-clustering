@@ -1276,27 +1276,42 @@ st.header("🌤️ Real-Time Weather")
 st.markdown(
     """
 Retrieve the latest available weather conditions from the Open-Meteo API
-for a selected location.
+for any city worldwide or select from the 100 project locations.
 """
+)
+
+search_mode = st.radio(
+    "City Selection Mode",
+    options=["100 Project Cities", "Custom Global City Search"],
+    horizontal=True,
+    key="realtime_search_mode",
 )
 
 realtime_col1, realtime_col2 = st.columns([3, 1])
 
 with realtime_col1:
-    realtime_cities = sorted(historical_df["city"].unique())
+    if search_mode == "100 Project Cities":
+        realtime_cities = sorted(historical_df["city"].unique())
 
-    default_rt_index = 0
-    if st.session_state.get("selected_city") in realtime_cities:
-        default_rt_index = realtime_cities.index(st.session_state.selected_city)
-    elif "Colombo" in realtime_cities:
-        default_rt_index = realtime_cities.index("Colombo")
+        default_rt_index = 0
+        if st.session_state.get("selected_city") in realtime_cities:
+            default_rt_index = realtime_cities.index(st.session_state.selected_city)
+        elif "Colombo" in realtime_cities:
+            default_rt_index = realtime_cities.index("Colombo")
 
-    realtime_city = st.selectbox(
-        "Select city",
-        options=realtime_cities,
-        index=default_rt_index,
-        key="realtime_city",
-    )
+        realtime_city = st.selectbox(
+            "Select city",
+            options=realtime_cities,
+            index=default_rt_index,
+            key="realtime_city_dropdown",
+        )
+    else:
+        realtime_city = st.text_input(
+            "Enter any city name worldwide",
+            value="Paris",
+            placeholder="e.g. Paris, Sydney, Kandy, Galle, Chicago, Tokyo",
+            key="realtime_city_custom",
+        )
 
 with realtime_col2:
     st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
@@ -1308,7 +1323,7 @@ with realtime_col2:
 
 if realtime_search:
     if not realtime_city.strip():
-        st.warning("Please select a city.")
+        st.warning("Please enter or select a city.")
     else:
         with st.spinner(
             f"Retrieving current weather for {realtime_city.strip()}..."
