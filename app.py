@@ -29,6 +29,44 @@ from dashboard_historical import (
     load_historical_data,
     summarize_variable,
 )
+from realtime_weather import (
+    get_current_weather_for_city,
+)
+
+# ============================================================================
+# WMO WEATHER CODE TRANSLATIONS
+# ============================================================================
+
+WMO_WEATHER_CODES = {
+    0: "Clear sky",
+    1: "Mainly clear",
+    2: "Partly cloudy",
+    3: "Overcast",
+    45: "Fog",
+    48: "Depositing rime fog",
+    51: "Light drizzle",
+    53: "Moderate drizzle",
+    55: "Dense drizzle",
+    56: "Light freezing drizzle",
+    57: "Dense freezing drizzle",
+    61: "Slight rain",
+    63: "Moderate rain",
+    65: "Heavy rain",
+    66: "Light freezing rain",
+    67: "Heavy freezing rain",
+    71: "Slight snow fall",
+    73: "Moderate snow fall",
+    75: "Heavy snow fall",
+    77: "Snow grains",
+    80: "Slight rain showers",
+    81: "Moderate rain showers",
+    82: "Violent rain showers",
+    85: "Slight snow showers",
+    86: "Heavy snow showers",
+    95: "Thunderstorm",
+    96: "Thunderstorm with slight hail",
+    99: "Thunderstorm with heavy hail",
+}
 
 CLUSTER_DATA_FILE = (
     PROJECT_ROOT
@@ -1211,5 +1249,242 @@ else:
             f"{len(selected_historical):,} daily observations "
             f"for {historical_city}."
         )
+
+# ============================================================================
+# REAL-TIME WEATHER
+# ============================================================================
+
+st.divider()
+
+st.header("🌤️ Real-Time Weather")
+
+st.markdown(
+    """
+Retrieve the latest available weather conditions from the Open-Meteo API
+for a selected location.
+"""
+)
+
+realtime_col1, realtime_col2 = st.columns([3, 1])
+
+with realtime_col1:
+    realtime_city = st.text_input(
+        "Enter a city",
+        value="Colombo",
+        placeholder="e.g. Colombo, London, Tokyo",
+        key="realtime_city",
+    )
+
+with realtime_col2:
+    realtime_search = st.button(
+        "Get Current Weather",
+        type="primary",
+        use_container_width=True,
+    )
+
+if realtime_search:
+    if not realtime_city.strip():
+        st.warning("Please enter a city name.")
+    else:
+        with st.spinner(
+            f"Retrieving current weather for {realtime_city.strip()}..."
+        ):
+            try:
+                realtime_result = get_current_weather_for_city(
+                    realtime_city.strip()
+                )
+
+                location = realtime_result["location"]
+                weather = realtime_result["weather"]
+
+                weather_code = weather.get("weather_code")
+                weather_description = WMO_WEATHER_CODES.get(
+                    weather_code,
+                    "Unknown condition",
+                )
+
+                # -----------------------------------------------------
+                # Location heading
+                # -----------------------------------------------------
+
+                st.subheader(
+                    f"{location['name']}, {location['country']}"
+                )
+
+                location_details = []
+
+                if location.get("admin1"):
+                    location_details.append(location["admin1"])
+
+                location_details.append(
+                    f"{location['latitude']:.4f}°, {location['longitude']:.4f}°"
+                )
+
+                location_details.append(location["timezone"])
+
+                st.caption(" • ".join(location_details))
+
+                # -----------------------------------------------------
+                # Current weather cards
+                # -----------------------------------------------------
+
+                rt_col1, rt_col2, rt_col3, rt_col4, rt_col5 = st.columns(5)
+
+                with rt_col1:
+                    temperature = weather["temperature_c"]
+                    st.metric(
+                        "Temperature",
+                        (
+                            f"{temperature:.1f} °C"
+                            if temperature is not None
+                            else "N/A"
+                        ),
+                    )
+
+                with rt_col2:
+                    humidity = weather["humidity_percent"]
+                    st.metric(
+                        "Humidity",
+                        (
+                            f"{humidity:.0f}%"
+                            if humidity is not None
+                            else "N/A"
+                        ),
+                    )
+
+                with rt_col3:
+                    precipitation = weather["precipitation_mm"]
+                    st.metric(
+                        "Precipitation",
+                        (
+                            f"{precipitation:.1f} mm"
+                            if precipitation is not None
+                            else "N/A"
+                        ),
+                    )
+
+                with rt_col4:
+                    wind = weather["wind_speed_kmh"]
+                    st.metric(
+                        "Wind Speed",
+                        (
+                            f"{wind:.1f} km/h"
+                            if wind is not None
+                            else "N/A"
+                        ),
+                    )
+
+                with rt_col5:
+                    pressure = weather["pressure_hpa"]
+                    st.metric(
+                        "Surface Pressure",
+                        (
+                            f"{pressure:.1f} hPa"
+                            if pressure is not None
+                            else "N/A"
+                        ),
+                    )
+
+                # -----------------------------------------------------
+                # Current condition details
+                # -----------------------------------------------------
+
+                st.markdown("#### Current Conditions")
+
+                condition_col1, condition_col2 = st.columns(2)
+
+                with condition_col1:
+                    st.metric(
+                        "Condition",
+                        weather_description,
+                    )
+
+                with condition_col2:
+                    day_status = weather.get("is_day")
+                    if day_status == 1:
+                        day_text = "Day"
+                    elif day_status == 0:
+                        day_text = "Night"
+                    else:
+                        day_text = "N/A"
+
+                    st.metric(
+                        "Day / Night",
+                        day_text,
+                    )
+
+                # -----------------------------------------------------
+                # Observation time
+                # -----------------------------------------------------
+
+                st.caption(
+                    "Open-Meteo local observation/model time: "
+                    f"{weather.get('time', 'N/A')} "
+                    f"({weather.get('timezone', location.get('timezone', 'local time'))})"
+                )
+
+                # -----------------------------------------------------
+                # Raw real-time details
+                # -----------------------------------------------------
+
+                with st.expander("View API weather details"):
+                    realtime_table = pd.DataFrame(
+                        {
+                            "Indicator": [
+                                "Temperature",
+                                "Relative humidity",
+                                "Precipitation",
+                                "Wind speed",
+                                "Surface pressure",
+                                "Weather condition",
+                                "WMO code",
+                                "Day / night",
+                            ],
+                            "Value": [
+                                (
+                                    f"{weather.get('temperature_c')} °C"
+                                    if weather.get("temperature_c") is not None
+                                    else "N/A"
+                                ),
+                                (
+                                    f"{weather.get('humidity_percent')}%"
+                                    if weather.get("humidity_percent") is not None
+                                    else "N/A"
+                                ),
+                                (
+                                    f"{weather.get('precipitation_mm')} mm"
+                                    if weather.get("precipitation_mm") is not None
+                                    else "N/A"
+                                ),
+                                (
+                                    f"{weather.get('wind_speed_kmh')} km/h"
+                                    if weather.get("wind_speed_kmh") is not None
+                                    else "N/A"
+                                ),
+                                (
+                                    f"{weather.get('pressure_hpa')} hPa"
+                                    if weather.get("pressure_hpa") is not None
+                                    else "N/A"
+                                ),
+                                weather_description,
+                                weather.get("weather_code"),
+                                day_text,
+                            ],
+                        }
+                    )
+
+                    st.dataframe(
+                        realtime_table,
+                        use_container_width=True,
+                        hide_index=True,
+                    )
+
+            except Exception as exc:
+                st.error(f"Unable to retrieve weather data: {exc}")
+                st.info(
+                    "Check the city name and your internet connection, "
+                    "then try again."
+                )
+
 
 
