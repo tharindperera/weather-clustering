@@ -1481,9 +1481,9 @@ if realtime_search:
                                     if weather.get("pressure_hpa") is not None
                                     else "N/A"
                                 ),
-                                weather_description,
-                                weather.get("weather_code"),
-                                day_text,
+                                str(weather_description),
+                                str(weather.get("weather_code", "N/A")),
+                                str(day_text),
                             ],
                         }
                     )
