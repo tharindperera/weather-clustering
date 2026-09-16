@@ -6,3 +6,4 @@ pyspark
 duckdb
 matplotlib
 scikit-learn
+huggingface_hub

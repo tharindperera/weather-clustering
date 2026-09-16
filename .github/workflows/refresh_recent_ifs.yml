@@ -1,0 +1,71 @@
+name: Refresh Recent ECMWF IFS Weather Data
+
+on:
+  schedule:
+    # 07:17 Asia/Colombo = 01:47 UTC (UTC+05:30)
+    - cron: '47 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh-ifs:
+    name: Download, Refresh & Sync ECMWF IFS Parquet
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Download latest IFS Parquet from Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python src/sync_recent_ifs_hf.py download
+
+      - name: Record initial checksum
+        id: before_hash
+        run: |
+          PARQUET_FILE="data/processed/parquet/weather_ifs_2026-present/year=2026/weather.parquet"
+          if [ -f "$PARQUET_FILE" ]; then
+            HASH=$(sha256sum "$PARQUET_FILE" | awk '{print $1}')
+            echo "hash=$HASH" >> "$GITHUB_OUTPUT"
+            echo "Initial checksum: $HASH"
+          else
+            echo "hash=none" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run incremental IFS refresh
+        run: |
+          python src/refresh_recent_ifs.py
+
+      - name: Check for updates and upload to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          PARQUET_FILE="data/processed/parquet/weather_ifs_2026-present/year=2026/weather.parquet"
+          PREV_HASH="${{ steps.before_hash.outputs.hash }}"
+          if [ -f "$PARQUET_FILE" ]; then
+            NEW_HASH=$(sha256sum "$PARQUET_FILE" | awk '{print $1}')
+          else
+            NEW_HASH="none"
+          fi
+
+          echo "Previous checksum: $PREV_HASH"
+          echo "New checksum:      $NEW_HASH"
+
+          if [ "$PREV_HASH" != "$NEW_HASH" ]; then
+            echo "Parquet dataset has new observations. Uploading to Hugging Face..."
+            python src/sync_recent_ifs_hf.py upload
+          else
+            echo "No new date / no Parquet changes detected. Hugging Face upload skipped."
+          fi
