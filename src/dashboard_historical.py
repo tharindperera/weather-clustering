@@ -4,6 +4,8 @@ import sys
 from pathlib import Path
 
 import pandas as pd
+from huggingface_hub import hf_hub_download
+import streamlit as st
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -14,14 +16,35 @@ if str(PROJECT_ROOT) not in sys.path:
 if str(PROJECT_ROOT / "src") not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-from config import PROCESSED_DIR
-
 # ---------------------------------------------------------------------
-# Historical Parquet location
+# Hugging Face and Local Dataset Configuration
 # ---------------------------------------------------------------------
 
-HISTORICAL_PARQUET_DIR = PROCESSED_DIR / "parquet" / "weather"
+HF_REPO_ID = (
+    "tharinduperera/weather-clustering-data"
+)
 
+HF_ERA5_DASHBOARD_FILE = (
+    "processed/dashboard/"
+    "weather_era5_2016_2025.parquet"
+)
+
+LOCAL_ERA5_DASHBOARD_FILE = (
+    PROJECT_ROOT
+    / "data"
+    / "processed"
+    / "dashboard"
+    / "weather_era5_2016_2025.parquet"
+)
+if not LOCAL_ERA5_DASHBOARD_FILE.exists() and (PROJECT_ROOT / "weather-clustering" / "data" / "processed" / "dashboard" / "weather_era5_2016_2025.parquet").exists():
+    LOCAL_ERA5_DASHBOARD_FILE = (
+        PROJECT_ROOT
+        / "weather-clustering"
+        / "data"
+        / "processed"
+        / "dashboard"
+        / "weather_era5_2016_2025.parquet"
+    )
 
 # ---------------------------------------------------------------------
 # Human-readable weather variables
@@ -49,63 +72,87 @@ VARIABLE_UNITS = {
 }
 
 
-import streamlit as st
-
 @st.cache_data
-def load_historical_data() -> pd.DataFrame:
+def load_historical_data(
+    allow_local_fallback: bool = True,
+) -> pd.DataFrame:
     """
-    Load the complete historical Parquet dataset.
+    Load the frozen ERA5 2016-2025 dashboard dataset.
 
-    Returns
-    -------
-    pandas.DataFrame
-        Historical city-day observations from 2016–2025.
+    Primary source:
+        Hugging Face Dataset repository.
+
+    Optional local fallback:
+        Consolidated local Parquet file.
     """
 
-    if not HISTORICAL_PARQUET_DIR.exists():
-        raise FileNotFoundError(
-            f"Historical Parquet directory not found: {HISTORICAL_PARQUET_DIR}"
+    try:
+
+        downloaded_file = hf_hub_download(
+            repo_id=HF_REPO_ID,
+            filename=HF_ERA5_DASHBOARD_FILE,
+            repo_type="dataset",
         )
 
-    parquet_files = list(HISTORICAL_PARQUET_DIR.glob("**/*.parquet"))
-    if not parquet_files:
-        raise FileNotFoundError(
-            f"No parquet files found in {HISTORICAL_PARQUET_DIR}"
+        df = pd.read_parquet(
+            downloaded_file
         )
 
-    df = pd.read_parquet(
-        HISTORICAL_PARQUET_DIR,
-        engine="pyarrow",
-    )
+    except Exception as hf_error:
 
-    required_columns = [
-        "location_id",
-        "city",
-        "country",
-        "date",
-        "temperature_mean",
-        "temperature_max",
-        "temperature_min",
-        "precipitation_sum",
-        "relative_humidity_mean",
-        "wind_speed_mean",
-        "surface_pressure_mean",
-    ]
+        if (
+            allow_local_fallback
+            and LOCAL_ERA5_DASHBOARD_FILE.exists()
+        ):
 
-    missing = [
-        column
-        for column in required_columns
-        if column not in df.columns
-    ]
+            print(
+                "WARNING: Hugging Face ERA5 download failed. "
+                "Using local dashboard fallback."
+            )
 
-    if missing:
-        raise ValueError(
-            f"Missing historical columns: {missing}"
-        )
+            print(
+                f"Hugging Face error: {hf_error}"
+            )
+
+            df = pd.read_parquet(
+                LOCAL_ERA5_DASHBOARD_FILE
+            )
+
+        else:
+
+            raise RuntimeError(
+                "Unable to load the ERA5 historical "
+                "dashboard dataset from Hugging Face."
+            ) from hf_error
 
     df["date"] = pd.to_datetime(
         df["date"]
     )
+
+    if len(df) != 365_300:
+        raise ValueError(
+            f"Expected 365,300 ERA5 observations, "
+            f"found {len(df)}."
+        )
+
+    if df["location_id"].nunique() != 100:
+        raise ValueError(
+            "Expected ERA5 data for exactly 100 locations."
+        )
+
+    duplicate_count = int(
+        df.duplicated(
+            subset=[
+                "location_id",
+                "date",
+            ]
+        ).sum()
+    )
+
+    if duplicate_count != 0:
+        raise ValueError(
+            "Duplicate ERA5 city-date rows detected."
+        )
 
     return df
 
@@ -259,4 +306,3 @@ def eda_summary(
         "maximum": float(series.max()),
         "range": float(series.max() - series.min()),
     }
-
