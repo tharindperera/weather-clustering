@@ -33,6 +33,12 @@ try:
     from src.realtime_weather import (
         get_current_weather_for_city,
     )
+    from src.city_comparison import (
+        compare_cities,
+        find_most_similar_cities,
+        load_city_comparison_data,
+        standardize_weather_profiles,
+    )
 except ImportError:
     from dashboard_historical import (
         HISTORICAL_VARIABLES,
@@ -46,6 +52,12 @@ except ImportError:
     )
     from realtime_weather import (
         get_current_weather_for_city,
+    )
+    from city_comparison import (
+        compare_cities,
+        find_most_similar_cities,
+        load_city_comparison_data,
+        standardize_weather_profiles,
     )
 
 # ============================================================================
@@ -288,9 +300,16 @@ def load_eda_features() -> pd.DataFrame:
     return df
 
 
+@st.cache_data
+def load_comparison_data() -> pd.DataFrame:
+    df = load_city_comparison_data()
+    return standardize_weather_profiles(df)
+
+
 df = load_cluster_data()
 eda_df = load_eda_features()
 historical_df = load_historical_data()
+comparison_standardized_df = load_comparison_data()
 
 # ============================================================================
 # MERGE CLUSTER + EDA INFORMATION
@@ -1264,6 +1283,276 @@ else:
             f"{len(selected_historical):,} daily observations "
             f"for {historical_city}."
         )
+
+# ============================================================================
+# CITY COMPARISON & WEATHER SIMILARITY
+# ============================================================================
+
+st.divider()
+
+st.header("🔎 City Comparison & Weather Similarity")
+
+st.markdown(
+    """
+Compare two project cities using the same five original weather variables
+used by the K-Means clustering model. The similarity distance is calculated
+in the standardized five-dimensional weather space.
+"""
+)
+
+comparison_col1, comparison_col2 = st.columns(2)
+
+project_cities = sorted(
+    comparison_standardized_df["city"].unique()
+)
+
+with comparison_col1:
+    city_a = st.selectbox(
+        "Location A",
+        options=project_cities,
+        index=(
+            project_cities.index("Colombo")
+            if "Colombo" in project_cities
+            else 0
+        ),
+        key="comparison_city_a",
+    )
+
+with comparison_col2:
+    city_b = st.selectbox(
+        "Location B",
+        options=project_cities,
+        index=(
+            project_cities.index("Singapore")
+            if "Singapore" in project_cities
+            else 1
+        ),
+        key="comparison_city_b",
+    )
+
+if city_a == city_b:
+    st.warning(
+        "Please select two different cities."
+    )
+else:
+    comparison = compare_cities(
+        comparison_standardized_df,
+        city_a,
+        city_b,
+    )
+
+    # -----------------------------------------------------------------
+    # Cluster relationship
+    # -----------------------------------------------------------------
+
+    relationship_col1, relationship_col2 = st.columns(2)
+
+    with relationship_col1:
+        cluster_a = comparison["cluster_a"]
+        st.metric(
+            f"{city_a} Cluster",
+            f"Cluster {cluster_a}",
+        )
+
+    with relationship_col2:
+        cluster_b = comparison["cluster_b"]
+        st.metric(
+            f"{city_b} Cluster",
+            f"Cluster {cluster_b}",
+        )
+
+    if comparison["same_cluster"]:
+        st.success(
+            f"Both cities belong to the same weather-pattern cluster: "
+            f"Cluster {cluster_a} — "
+            f"{CLUSTER_NAMES[cluster_a]}"
+        )
+    else:
+        st.info(
+            f"The cities belong to different weather-pattern clusters: "
+            f"{CLUSTER_NAMES[cluster_a]} vs "
+            f"{CLUSTER_NAMES[cluster_b]}."
+        )
+
+    # -----------------------------------------------------------------
+    # Weather-profile distance
+    # -----------------------------------------------------------------
+
+    distance_col1, distance_col2 = st.columns([1, 2])
+
+    with distance_col1:
+        st.metric(
+            "Standardized Weather Distance",
+            f"{comparison['standardized_distance']:.4f}",
+        )
+
+    with distance_col2:
+        st.caption(
+            """
+            Smaller values indicate more similar five-variable
+            weather profiles. The distance uses standardized
+            temperature, rainfall, humidity, wind speed, and
+            surface pressure.
+            """
+        )
+
+    # -----------------------------------------------------------------
+    # Direct comparison table
+    # -----------------------------------------------------------------
+
+    st.subheader("Weather Indicator Comparison")
+
+    comparison_table = (
+        comparison["variable_comparison"]
+        .copy()
+    )
+
+    display_names = {
+        "temperature_c": "Temperature",
+        "rainfall_mm_per_day": "Rainfall",
+        "humidity_percent": "Humidity",
+        "wind_speed_kmh": "Wind Speed",
+        "pressure_hpa": "Surface Pressure",
+    }
+
+    units = {
+        "temperature_c": "°C",
+        "rainfall_mm_per_day": "mm/day",
+        "humidity_percent": "%",
+        "wind_speed_kmh": "km/h",
+        "pressure_hpa": "hPa",
+    }
+
+    comparison_table["Indicator"] = (
+        comparison_table["variable"]
+        .map(display_names)
+    )
+
+    comparison_table["Unit"] = (
+        comparison_table["variable"]
+        .map(units)
+    )
+
+    comparison_table = comparison_table[
+        [
+            "Indicator",
+            "Unit",
+            "city_a",
+            "city_b",
+            "difference",
+            "absolute_difference",
+        ]
+    ]
+
+    comparison_table.columns = [
+        "Indicator",
+        "Unit",
+        city_a,
+        city_b,
+        "Difference",
+        "Absolute Difference",
+    ]
+
+    st.dataframe(
+        comparison_table.round(3),
+        use_container_width=True,
+        hide_index=True,
+    )
+
+    # -----------------------------------------------------------------
+    # Difference drivers
+    # -----------------------------------------------------------------
+
+    st.subheader(
+        "What Drives the Difference?"
+    )
+
+    contribution_df = (
+        comparison["distance_contributions"]
+        .copy()
+    )
+
+    contribution_df["Indicator"] = (
+        contribution_df["variable"]
+        .map(display_names)
+    )
+
+    contribution_df["Contribution (%)"] = (
+        contribution_df["distance_contribution"]
+        * 100
+    )
+
+    contribution_df = contribution_df[
+        [
+            "Indicator",
+            "standardized_difference",
+            "Contribution (%)",
+        ]
+    ]
+
+    contribution_df.columns = [
+        "Indicator",
+        "Standardized Difference",
+        "Contribution (%)",
+    ]
+
+    st.bar_chart(
+        contribution_df.set_index(
+            "Indicator"
+        )[
+            "Contribution (%)"
+        ],
+        height=320,
+    )
+
+    st.dataframe(
+        contribution_df.round(3),
+        use_container_width=True,
+        hide_index=True,
+    )
+
+    # -----------------------------------------------------------------
+    # Most similar cities to City A
+    # -----------------------------------------------------------------
+
+    st.subheader(
+        f"Cities Most Similar to {city_a}"
+    )
+
+    similar_cities = find_most_similar_cities(
+        comparison_standardized_df,
+        city_a,
+        top_n=5,
+    )
+
+    similar_cities["Weather Pattern"] = (
+        similar_cities["cluster_id"]
+        .map(CLUSTER_NAMES)
+    )
+
+    similar_cities = similar_cities[
+        [
+            "city",
+            "country",
+            "cluster_id",
+            "Weather Pattern",
+            "distance",
+        ]
+    ]
+
+    similar_cities.columns = [
+        "City",
+        "Country",
+        "Cluster",
+        "Weather Pattern",
+        "Distance",
+    ]
+
+    st.dataframe(
+        similar_cities.round(4),
+        use_container_width=True,
+        hide_index=True,
+    )
 
 # ============================================================================
 # REAL-TIME WEATHER
