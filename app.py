@@ -1283,14 +1283,23 @@ for a selected location.
 realtime_col1, realtime_col2 = st.columns([3, 1])
 
 with realtime_col1:
-    realtime_city = st.text_input(
-        "Enter a city",
-        value="Colombo",
-        placeholder="e.g. Colombo, London, Tokyo",
+    realtime_cities = sorted(historical_df["city"].unique())
+
+    default_rt_index = 0
+    if st.session_state.get("selected_city") in realtime_cities:
+        default_rt_index = realtime_cities.index(st.session_state.selected_city)
+    elif "Colombo" in realtime_cities:
+        default_rt_index = realtime_cities.index("Colombo")
+
+    realtime_city = st.selectbox(
+        "Select city",
+        options=realtime_cities,
+        index=default_rt_index,
         key="realtime_city",
     )
 
 with realtime_col2:
+    st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
     realtime_search = st.button(
         "Get Current Weather",
         type="primary",
@@ -1299,7 +1308,7 @@ with realtime_col2:
 
 if realtime_search:
     if not realtime_city.strip():
-        st.warning("Please enter a city name.")
+        st.warning("Please select a city.")
     else:
         with st.spinner(
             f"Retrieving current weather for {realtime_city.strip()}..."
