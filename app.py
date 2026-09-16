@@ -19,46 +19,25 @@ if str(PROJECT_ROOT / "weather-clustering" / "src") not in sys.path:
 if str(PROJECT_ROOT / "src") not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
-try:
-    from src.dashboard_historical import (
-        HISTORICAL_VARIABLES,
-        VARIABLE_UNITS,
-        aggregate_monthly,
-        aggregate_yearly,
-        eda_summary,
-        filter_historical_data,
-        load_historical_data,
-        summarize_variable,
-    )
-    from src.realtime_weather import (
-        get_current_weather_for_city,
-    )
-    from src.city_comparison import (
-        compare_cities,
-        find_most_similar_cities,
-        load_city_comparison_data,
-        standardize_weather_profiles,
-    )
-except ImportError:
-    from dashboard_historical import (
-        HISTORICAL_VARIABLES,
-        VARIABLE_UNITS,
-        aggregate_monthly,
-        aggregate_yearly,
-        eda_summary,
-        filter_historical_data,
-        load_historical_data,
-        summarize_variable,
-    )
-    from realtime_weather import (
-        get_current_weather_for_city,
-    )
-    from city_comparison import (
-        compare_cities,
-        find_most_similar_cities,
-        load_city_comparison_data,
-        standardize_weather_profiles,
-    )
+from src.dashboard_historical import (
+    HISTORICAL_VARIABLES,
+    VARIABLE_UNITS,
+    aggregate_monthly,
+    aggregate_yearly,
+    eda_summary,
+    filter_historical_data,
+    load_historical_data,
+    summarize_variable,
+)
+from src.realtime_weather import (
+    get_current_weather_for_city,
+)
+from src.city_comparison import (
+    compare_cities,
+    find_most_similar_cities,
+    load_city_comparison_data,
+    standardize_weather_profiles,
+)
 
 # ============================================================================
 # WMO WEATHER CODE TRANSLATIONS
