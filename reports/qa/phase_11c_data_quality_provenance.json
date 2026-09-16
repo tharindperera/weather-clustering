@@ -1,0 +1,103 @@
+{
+  "generated_at_utc": "2026-09-16T17:58:29.647617+00:00",
+  "status": "PASS",
+  "datasets": {
+    "locations": {
+      "rows": 100,
+      "cities": 100,
+      "countries": 80,
+      "duplicate_location_ids": 0,
+      "status": "PASS"
+    },
+    "final_clustering": {
+      "rows": 100,
+      "k": 4,
+      "cluster_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cluster_sizes": {
+        "0": 36,
+        "1": 20,
+        "2": 34,
+        "3": 10
+      },
+      "clustering_variables": [
+        "temperature_c",
+        "rainfall_mm_per_day",
+        "humidity_percent",
+        "wind_speed_kmh",
+        "pressure_hpa"
+      ],
+      "status": "PASS"
+    },
+    "derived_climate_features": {
+      "rows": 100,
+      "derived_numeric_features": 16,
+      "used_for_kmeans": false,
+      "role": "EDA and descriptive climate analysis only",
+      "status": "PASS"
+    },
+    "era5_baseline": {
+      "rows": 365300,
+      "locations": 100,
+      "cities": 100,
+      "minimum_date": "2016-01-01",
+      "maximum_date": "2025-12-31",
+      "days_per_location": 3653,
+      "duplicates": 0,
+      "missing_weather_values": 0,
+      "temperature_consistency_violations": 0,
+      "status": "PASS"
+    },
+    "ecmwf_ifs_recent": {
+      "rows": 25800,
+      "locations": 100,
+      "cities": 100,
+      "minimum_date": "2026-01-01",
+      "maximum_date": "2026-09-15",
+      "days_per_location": 258,
+      "duplicates": 0,
+      "missing_weather_values": 0,
+      "temperature_consistency_violations": 0,
+      "status": "PASS"
+    }
+  },
+  "provenance": {
+    "provider": "Open-Meteo",
+    "era5": {
+      "underlying_model": "ERA5",
+      "period": "2016-01-01 to 2025-12-31",
+      "purpose": "Frozen long-term climate baseline and official K=4 clustering",
+      "automatically_retrained": false
+    },
+    "ecmwf_ifs": {
+      "underlying_model": "ECMWF IFS",
+      "period": "2026-01-01 to latest published complete day",
+      "purpose": "Recent historical operational weather layer",
+      "automatically_updated": true
+    },
+    "real_time": {
+      "storage": "Not permanently stored",
+      "purpose": "Current conditions retrieved live through Open-Meteo"
+    },
+    "analytics": {
+      "kmeans_engine": "Apache Spark MLlib",
+      "final_k": 4,
+      "k_selection_range": "2 to 8",
+      "pca_role": "Visualization only; PCA was not used as clustering input",
+      "derived_features_used_for_kmeans": false
+    },
+    "storage": {
+      "raw": "JSON",
+      "analytical": "Apache Parquet",
+      "cloud_dataset_store": "Hugging Face Datasets"
+    },
+    "automation": {
+      "scheduler": "GitHub Actions",
+      "dashboard_host": "Streamlit Community Cloud"
+    }
+  }
+}

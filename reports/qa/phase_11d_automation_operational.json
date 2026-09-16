@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "workflow": {
+    "workflow_file": "refresh_recent_ifs.yml",
+    "daily_cron_utc": "47 1 * * *",
+    "daily_time_asia_colombo": "07:17",
+    "manual_trigger_enabled": true,
+    "hf_secret_reference_present": true,
+    "checksum_change_detection": true,
+    "download_before_refresh": true,
+    "conditional_upload_after_change": true,
+    "status": "PASS"
+  },
+  "incremental_refresh": {
+    "published_baseline_rows": 25800,
+    "published_baseline_latest_date": "2026-09-15",
+    "simulated_missing_days": 3,
+    "simulated_new_rows": 300,
+    "synthetic_multi_location_fetches": 5,
+    "duplicates_after_catch_up": 0,
+    "catch_up_status": "PASS",
+    "idempotent_second_run_fetches": 0,
+    "idempotent_parquet_hash_unchanged": true,
+    "idempotency_status": "PASS"
+  },
+  "failure_safety": {
+    "synthetic_failure_propagated": true,
+    "parquet_hash_unchanged_after_failure": true,
+    "checkpoint_not_advanced_after_failure": true,
+    "status": "PASS"
+  },
+  "manual_cloud_evidence": {
+    "github_actions_manual_runs_completed": 2,
+    "note": "Two manual GitHub Actions runs were previously verified successfully."
+  }
+}
