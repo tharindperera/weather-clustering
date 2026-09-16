@@ -828,6 +828,33 @@ else:
     )
 
 # ============================================================================
+# METHODOLOGY
+# ============================================================================
+
+st.divider()
+
+with st.expander("About the Weather Pattern Clustering Methodology"):
+    st.markdown(
+        """
+### Clustering methodology
+The project uses historical ERA5 weather data from Open-Meteo for **100 cities across 80 countries**, covering **2016–2025**.
+
+The final K-Means model was implemented using **PySpark MLlib**. Five original Open-Meteo weather variables were used as clustering inputs:
+1. Mean temperature
+2. Mean daily precipitation
+3. Mean relative humidity
+4. Mean wind speed
+5. Mean surface pressure
+
+These five variables were standardized before K-Means clustering. The final model contains **four weather-pattern clusters (K=4)**.
+
+The geographic coordinates are used only to visualize the resulting weather-pattern groups. They are **not** clustering variables.
+
+The detailed EDA information shown for an individual location contains additional descriptive statistics derived from the historical dataset. Those descriptive statistics are used for interpretation and do not change the K-Means clustering assignments.
+"""
+    )
+
+# ============================================================================
 # HISTORICAL WEATHER EXPLORER
 # ============================================================================
 
@@ -1185,29 +1212,4 @@ else:
             f"for {historical_city}."
         )
 
-# ============================================================================
-# METHODOLOGY
-# ============================================================================
 
-st.divider()
-
-with st.expander("About the Weather Pattern Clustering Methodology"):
-    st.markdown(
-        """
-### Clustering methodology
-The project uses historical ERA5 weather data from Open-Meteo for **100 cities across 80 countries**, covering **2016–2025**.
-
-The final K-Means model was implemented using **PySpark MLlib**. Five original Open-Meteo weather variables were used as clustering inputs:
-1. Mean temperature
-2. Mean daily precipitation
-3. Mean relative humidity
-4. Mean wind speed
-5. Mean surface pressure
-
-These five variables were standardized before K-Means clustering. The final model contains **four weather-pattern clusters (K=4)**.
-
-The geographic coordinates are used only to visualize the resulting weather-pattern groups. They are **not** clustering variables.
-
-The detailed EDA information shown for an individual location contains additional descriptive statistics derived from the historical dataset. Those descriptive statistics are used for interpretation and do not change the K-Means clustering assignments.
-"""
-    )
