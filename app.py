@@ -42,7 +42,6 @@ from src.dashboard_recent_ifs import (
     get_latest_recent_date,
     get_recent_city_data,
     load_recent_ifs_data,
-    perform_incremental_refresh,
 )
 
 # ============================================================================
@@ -291,9 +290,20 @@ def load_comparison_data() -> pd.DataFrame:
     return standardize_weather_profiles(df)
 
 
-@st.cache_data
+@st.cache_data(
+    ttl=3600,
+    show_spinner=False,
+)
 def load_recent_data() -> pd.DataFrame:
-    return load_recent_ifs_data()
+    """
+    Load the latest published ECMWF IFS dataset
+    directly from Hugging Face.
+
+    Cache lifetime: 1 hour.
+    """
+    return load_recent_ifs_data(
+        allow_local_fallback=False
+    )
 
 
 df = load_cluster_data()
@@ -672,20 +682,26 @@ latest_recent_date = get_latest_recent_date(
 
 st.markdown(
     f"""
+Recent historical weather is based on **ECMWF IFS**
+data retrieved through the Open-Meteo Historical Forecast API.
 
-This layer is separate from the 2016–2025 ERA5 climate baseline used for
-the official weather-pattern clustering.
+The analytical dataset is automatically updated by
+**GitHub Actions** and published to **Hugging Face**.
+
+Latest published complete daily observation:
+**{latest_recent_date}**
 """
 )
 
-if "recent_refresh_message" in st.session_state:
-    if st.session_state.get("recent_refresh_status") == "updated":
-        st.success(st.session_state["recent_refresh_message"])
-    else:
-        st.info(st.session_state["recent_refresh_message"])
-    del st.session_state["recent_refresh_message"]
-    if "recent_refresh_status" in st.session_state:
-        del st.session_state["recent_refresh_status"]
+if st.session_state.pop(
+    "recent_data_reload_notice",
+    False,
+):
+    st.success(
+        "Latest published ECMWF IFS data "
+        f"loaded from Hugging Face through "
+        f"{latest_recent_date}."
+    )
 
 recent_ctrl_col1, recent_ctrl_col2 = st.columns([3, 1])
 
@@ -700,22 +716,14 @@ with recent_ctrl_col1:
 
 with recent_ctrl_col2:
     st.markdown("<div style='height: 28px;'></div>", unsafe_allow_html=True)
-    refresh_button = st.button(
-        "🔄 Refresh Recent Data",
-        help="Check Open-Meteo for newly completed daily observations, append them to the dataset, and update all plots.",
+    if st.button(
+        "🔄 Reload Latest Published Data",
+        key="reload_recent_hf",
         use_container_width=True,
-    )
-
-if refresh_button:
-    with st.spinner("Checking Open-Meteo for recent daily weather updates..."):
-        try:
-            refresh_result = perform_incremental_refresh()
-            st.session_state["recent_refresh_message"] = refresh_result["message"]
-            st.session_state["recent_refresh_status"] = refresh_result["status"]
-            st.cache_data.clear()
-            st.rerun()
-        except Exception as exc:
-            st.error(f"Refresh failed: {exc}")
+    ):
+        load_recent_data.clear()
+        st.session_state["recent_data_reload_notice"] = True
+        st.rerun()
 
 recent_city_df = get_recent_city_data(
     recent_ifs_df,
